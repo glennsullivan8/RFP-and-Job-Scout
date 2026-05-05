@@ -1,0 +1,71 @@
+name: Generate Application
+
+on:
+  workflow_dispatch:
+    inputs:
+      opportunity_id:
+        description: "Opportunity ID (from dashboard)"
+        required: true
+      opportunity_type:
+        description: "Type: rfp or job"
+        required: true
+        default: "rfp"
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - run: pip install -r requirements.txt
+      - run: npm install docx
+
+      - name: Generate application document
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python -c "
+          import json, sys
+          from pathlib import Path
+          from generators.generate_application import generate_application
+
+          data = json.loads(Path('dashboard/data/opportunities.json').read_text())
+          opp_id   = '${{ github.event.inputs.opportunity_id }}'
+          opp_type = '${{ github.event.inputs.opportunity_type }}'
+
+          all_opps = data.get('rfps',[]) + data.get('jobs',[])
+          opp = next((o for o in all_opps if o['id']==opp_id), None)
+          if not opp:
+              print(f'Opportunity {opp_id} not found'); sys.exit(1)
+
+          doc_path = generate_application(opp)
+          print(f'Generated: {doc_path}')
+          "
+
+      - name: Commit generated document
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add generated_docs/ data/tracker.json || true
+          git diff --staged --quiet || git commit -m "📄 Application doc: ${{ github.event.inputs.opportunity_id }}"
+          git push
+
+      # Upload the .docx as a downloadable artifact
+      - uses: actions/upload-artifact@v4
+        with:
+          name: application-${{ github.event.inputs.opportunity_id }}
+          path: generated_docs/
+          retention-days: 90

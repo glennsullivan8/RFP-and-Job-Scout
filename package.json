@@ -1,0 +1,8 @@
+{
+  "name": "niche-management-docs",
+  "version": "1.0.0",
+  "description": "Word document generator for Niche Management LLC applications",
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}

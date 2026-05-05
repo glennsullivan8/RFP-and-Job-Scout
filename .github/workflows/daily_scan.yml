@@ -1,0 +1,54 @@
+name: Daily Opportunity Scan
+
+on:
+  schedule:
+    - cron: "0 11 * * 1-5"   # 7:00 AM ET, weekdays
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: "Days to look back"
+        default: "3"
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write   # needed to commit opportunities.json to repo
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          GMAIL_USER:        ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASS:    ${{ secrets.GMAIL_APP_PASS }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SAM_API_KEY:       ${{ secrets.SAM_API_KEY }}
+          USAJOBS_API_KEY:   ${{ secrets.USAJOBS_API_KEY }}
+          DAYS_BACK:         ${{ github.event.inputs.days_back || '3' }}
+          DASHBOARD_URL:     ${{ secrets.DASHBOARD_URL }}
+        run: python main.py
+
+      # Commit the fresh opportunities.json so the dashboard has live data
+      - name: Commit updated data
+        run: |
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add dashboard/data/opportunities.json data/tracker.json || true
+          git diff --staged --quiet || git commit -m "📡 Daily scan $(date +%Y-%m-%d)"
+          git push
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scan-results-${{ github.run_number }}
+          path: dashboard/data/
+          retention-days: 30

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RFP and Job Scout — Niche Management LLC</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f2f2f0;color:#111;font-size:14px}
+a{color:inherit;text-decoration:none}
+
+/* Layout */
+.app{display:flex;height:100vh;overflow:hidden}
+.sidebar{width:220px;background:#0F6E56;color:white;flex-shrink:0;display:flex;flex-direction:column;overflow-y:auto}
+.main{flex:1;overflow-y:auto;padding:24px}
+
+/* Sidebar */
+.sidebar-header{padding:20px 16px 12px}
+.sidebar-header h1{font-size:15px;font-weight:600;line-height:1.3}
+.sidebar-header p{font-size:11px;opacity:.75;margin-top:3px}
+.sidebar-stats{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 12px 12px}
+.stat-box{background:rgba(255,255,255,.12);border-radius:8px;padding:8px 10px;text-align:center}
+.stat-val{font-size:18px;font-weight:700}
+.stat-lbl{font-size:9px;opacity:.8;margin-top:1px}
+.nav-section{font-size:10px;font-weight:600;opacity:.6;padding:12px 16px 4px;text-transform:uppercase;letter-spacing:.06em}
+.nav-item{display:flex;align-items:center;gap:10px;padding:9px 16px;cursor:pointer;font-size:13px;opacity:.85;border-left:3px solid transparent;transition:all .15s}
+.nav-item:hover{background:rgba(255,255,255,.1);opacity:1}
+.nav-item.active{background:rgba(255,255,255,.15);opacity:1;border-left-color:white}
+.nav-item .count{margin-left:auto;background:rgba(255,255,255,.2);border-radius:10px;font-size:10px;padding:1px 7px}
+.sidebar-footer{margin-top:auto;padding:12px 16px;font-size:11px;opacity:.5;border-top:1px solid rgba(255,255,255,.1)}
+
+/* Page */
+.page{display:none}.page.active{display:block}
+.page-title{font-size:20px;font-weight:600;margin-bottom:4px}
+.page-sub{font-size:13px;color:#666;margin-bottom:20px}
+
+/* Cards */
+.card{background:white;border:1px solid #e5e5e5;border-radius:10px;padding:16px;margin-bottom:10px;transition:box-shadow .15s}
+.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.card.applied-card{background:#f0faf6;border-color:#9FE1CB}
+.card-header{display:flex;align-items:flex-start;gap:12px}
+.card-body{flex:1;min-width:0}
+.card-rank{font-size:11px;color:#999;margin-bottom:3px}
+.card-title{font-size:14px;font-weight:600;color:#111;margin-bottom:2px;line-height:1.3}
+.card-org{font-size:13px;color:#444;margin-bottom:3px}
+.card-meta{font-size:11px;color:#777;margin-bottom:7px}
+.card-desc{font-size:12px;color:#444;line-height:1.55;margin-bottom:8px}
+.score-box{text-align:center;min-width:46px;flex-shrink:0}
+.score-num{font-size:22px;font-weight:700}
+.score-lbl{font-size:9px;color:#aaa}
+.score-bar{height:4px;background:#eee;border-radius:2px;margin:4px 0 10px;overflow:hidden}
+.score-fill{height:100%;border-radius:2px}
+.pills{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px}
+.pill{font-size:10px;padding:2px 8px;border-radius:10px;background:#E1F5EE;color:#0F6E56}
+.pill.blue{background:#E6F1FB;color:#185FA5}
+.pill.amber{background:#FAEEDA;color:#854F0B}
+.pill.purple{background:#EEEDFE;color:#533AB7}
+.pill.red{background:#FCEBEB;color:#A32D2D}
+.btn-row{display:flex;gap:7px;flex-wrap:wrap}
+.btn{padding:6px 13px;border-radius:6px;font-size:12px;border:none;cursor:pointer;font-weight:500;display:inline-flex;align-items:center;gap:5px;transition:opacity .15s}
+.btn:hover{opacity:.85}
+.btn-teal{background:#0F6E56;color:white}
+.btn-blue{background:#185FA5;color:white}
+.btn-green{background:#E1F5EE;color:#0F6E56;border:1px solid #9FE1CB}
+.btn-amber{background:#FAEEDA;color:#854F0B;border:1px solid #FAC775}
+.btn-gray{background:#f0f0ee;color:#555;border:1px solid #ddd}
+.btn-red{background:#FCEBEB;color:#A32D2D;border:1px solid #F7C1C1}
+.btn-disabled{background:#f5f5f5;color:#aaa;border:1px solid #eee;cursor:default}
+.badge{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500;margin-right:4px}
+.badge-green{background:#E1F5EE;color:#0F6E56}
+.badge-blue{background:#E6F1FB;color:#185FA5}
+.badge-amber{background:#FAEEDA;color:#854F0B}
+.badge-purple{background:#EEEDFE;color:#533AB7}
+.badge-red{background:#FCEBEB;color:#A32D2D}
+.badge-gray{background:#F1EFE8;color:#5F5E5A}
+
+/* Table */
+.tbl-wrap{background:white;border:1px solid #e5e5e5;border-radius:10px;overflow:hidden;margin-bottom:16px}
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{padding:9px 12px;background:#F5F5F3;color:#666;font-weight:500;text-align:left;border-bottom:1px solid #eee}
+.tbl td{padding:9px 12px;border-bottom:1px solid #f5f5f5;vertical-align:middle}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:#fafaf8}
+.tbl tr.applied td{background:#f0faf6}
+.tbl-score{font-weight:700;font-size:13px}
+.tbl-title{color:#111;font-weight:500;max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tbl-org{color:#555;max-width:140px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Filter bar */
+.filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.filter-bar input{flex:1;min-width:180px;padding:8px 12px;border:1px solid #ddd;border-radius:7px;font-size:13px;background:white}
+.filter-bar select{padding:8px 10px;border:1px solid #ddd;border-radius:7px;font-size:13px;background:white;cursor:pointer}
+
+/* Section dividers */
+.section-div{margin:28px 0 14px;padding-bottom:8px;border-bottom:1px solid #e5e5e5}
+.section-div h2{font-size:15px;font-weight:600;margin-bottom:2px}
+.section-div p{font-size:12px;color:#777}
+
+/* Import panel */
+.import-box{background:white;border:2px dashed #ccc;border-radius:10px;padding:32px;text-align:center;margin-bottom:16px;cursor:pointer;transition:border-color .2s}
+.import-box:hover{border-color:#0F6E56}
+.import-box h3{font-size:15px;font-weight:600;margin-bottom:6px}
+.import-box p{font-size:12px;color:#666;line-height:1.6}
+.import-box input[type=file]{display:none}
+
+/* Modal */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;align-items:center;justify-content:center}
+.modal-bg.open{display:flex}
+.modal{background:white;border-radius:12px;padding:24px;max-width:520px;width:93%;max-height:85vh;overflow-y:auto}
+.modal h2{font-size:16px;font-weight:600;color:#0F6E56;margin-bottom:10px}
+.modal p{font-size:13px;color:#444;line-height:1.65;margin-bottom:10px}
+.modal-close{float:right;background:none;border:none;font-size:18px;cursor:pointer;color:#999;margin-top:-4px}
+.info-box{background:#E1F5EE;border-radius:7px;padding:11px 14px;font-size:12px;color:#0F6E56;margin-top:10px;line-height:1.6}
+.warn-box{background:#FAEEDA;border-radius:7px;padding:11px 14px;font-size:12px;color:#854F0B;margin-top:10px;line-height:1.6}
+
+/* History */
+.history-row{background:white;border:1px solid #e5e5e5;border-radius:8px;padding:13px 16px;margin-bottom:8px;display:flex;align-items:center;gap:12px}
+.history-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.history-info{flex:1}
+.history-title{font-size:13px;font-weight:500;color:#111}
+.history-meta{font-size:11px;color:#777;margin-top:2px}
+.history-badge{flex-shrink:0}
+
+/* Toast */
+.toast{position:fixed;bottom:20px;right:20px;background:#111;color:white;padding:10px 16px;border-radius:8px;font-size:13px;z-index:300;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0)}
+
+/* Empty states */
+.empty{text-align:center;padding:48px 20px;color:#888}
+.empty h3{font-size:15px;font-weight:500;margin-bottom:6px;color:#555}
+.empty p{font-size:13px;line-height:1.6}
+
+/* Upload instructions */
+.step{display:flex;gap:12px;margin-bottom:12px}
+.step-num{width:24px;height:24px;border-radius:50%;background:#0F6E56;color:white;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.step-text{font-size:13px;color:#333;line-height:1.6;padding-top:2px}
+</style>
+</head>
+<body>
+
+<!-- Toast -->
+<div id="toast" class="toast"></div>
+
+<!-- Modal -->
+<div id="modal" class="modal-bg">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h2 id="modal-title"></h2>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div class="app">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <h1>Niche Management LLC</h1>
+      <p>Glenn Sullivan, GISP · FAA Part 107</p>
+    </div>
+    <div class="sidebar-stats">
+      <div class="stat-box"><div class="stat-val" id="s-rfp">0</div><div class="stat-lbl">RFPs</div></div>
+      <div class="stat-box"><div class="stat-val" id="s-job">0</div><div class="stat-lbl">Jobs</div></div>
+      <div class="stat-box"><div class="stat-val" id="s-applied">0</div><div class="stat-lbl">Applied</div></div>
+      <div class="stat-box"><div class="stat-val" id="s-local">0</div><div class="stat-lbl">Local</div></div>
+    </div>
+
+    <div class="nav-section">Opportunities</div>
+    <div class="nav-item active" onclick="nav('top-rfp')">📡 Top 10 RFPs <span class="count" id="n-rfp">0</span></div>
+    <div class="nav-item" onclick="nav('top-job')">💼 Top 10 Jobs <span class="count" id="n-job">0</span></div>
+    <div class="nav-item" onclick="nav('local')">📍 Local / Drone <span class="count" id="n-local">0</span></div>
+
+    <div class="nav-section">All Opportunities</div>
+    <div class="nav-item" onclick="nav('all-rfp')">All RFPs <span class="count" id="n-all-rfp">0</span></div>
+    <div class="nav-item" onclick="nav('all-job')">All Jobs <span class="count" id="n-all-job">0</span></div>
+
+    <div class="nav-section">Tracking</div>
+    <div class="nav-item" onclick="nav('history')">📋 Applied History <span class="count" id="n-applied">0</span></div>
+    <div class="nav-item" onclick="nav('saved')">🔖 Saved <span class="count" id="n-saved">0</span></div>
+
+    <div class="nav-section">Settings</div>
+    <div class="nav-item" onclick="nav('import')">📂 Import Data</div>
+    <div class="nav-item" onclick="clearHidden()">🗑 Clear Hidden</div>
+
+    <div class="sidebar-footer">Last updated: <span id="last-updated">Never</span></div>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+
+    <!-- Top RFPs -->
+    <div id="page-top-rfp" class="page active">
+      <div class="page-title">Top 10 RFP Opportunities</div>
+      <div class="page-sub">Ranked by relevance to your profile · Strictly filtered — no noise</div>
+      <div id="top-rfp-list"></div>
+    </div>
+
+    <!-- Top Jobs -->
+    <div id="page-top-job" class="page">
+      <div class="page-title">Top 10 Job Opportunities</div>
+      <div class="page-sub">Federal, private, research, PhD & teaching positions</div>
+      <div id="top-job-list"></div>
+    </div>
+
+    <!-- Local -->
+    <div id="page-local" class="page">
+      <div class="page-title">📍 Local & Drone Opportunities</div>
+      <div class="page-sub">Within 120 miles of Roanoke, VA — Part 107 eligible</div>
+      <div id="local-list"></div>
+    </div>
+
+    <!-- All RFPs -->
+    <div id="page-all-rfp" class="page">
+      <div class="page-title">All RFP Matches</div>
+      <div class="filter-bar">
+        <input type="text" id="rfp-q" placeholder="Search title or agency..." oninput="renderAllRfp()">
+        <select id="rfp-sort" onchange="renderAllRfp()">
+          <option value="score">Sort: Score</option>
+          <option value="posted">Sort: Posted</option>
+          <option value="deadline">Sort: Deadline</option>
+        </select>
+      </div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>#</th><th>Opportunity</th><th>Agency</th><th>Deadline</th><th>Score</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody id="rfp-tbody"></tbody>
+      </table></div>
+    </div>
+
+    <!-- All Jobs -->
+    <div id="page-all-job" class="page">
+      <div class="page-title">All Job Matches</div>
+      <div class="filter-bar">
+        <input type="text" id="job-q" placeholder="Search title or organization..." oninput="renderAllJob()">
+        <select id="job-sort" onchange="renderAllJob()">
+          <option value="score">Sort: Score</option>
+          <option value="org">Sort: Organization</option>
+          <option value="type">Sort: Type</option>
+        </select>
+      </div>
+      <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>#</th><th>Position</th><th>Organization</th><th>Type</th><th>Score</th><th>Status</th><th>Actions</th></tr></thead>
+        <tbody id="job-tbody"></tbody>
+      </table></div>
+    </div>
+
+    <!-- History -->
+    <div id="page-history" class="page">
+      <div class="page-title">Applied History</div>
+      <div class="page-sub">Every opportunity you've generated an application for or marked as applied</div>
+      <div id="history-list"></div>
+    </div>
+
+    <!-- Saved -->
+    <div id="page-saved" class="page">
+      <div class="page-title">Saved Opportunities</div>
+      <div class="page-sub">Items you've bookmarked to review later</div>
+      <div id="saved-list"></div>
+    </div>
+
+    <!-- Import -->
+    <div id="page-import" class="page">
+      <div class="page-title">Import Opportunity Data</div>
+      <div class="page-sub">Load the JSON file produced by your GitHub Actions scanner</div>
+
+      <div style="margin-bottom:20px">
+        <div class="step"><div class="step-num">1</div><div class="step-text">Run your GitHub Actions <strong>Daily Opportunity Scan</strong> workflow (or wait for the 7 AM weekday schedule).</div></div>
+        <div class="step"><div class="step-num">2</div><div class="step-text">In your GitHub repo, go to <strong>Actions → Daily Opportunity Scan → latest run → Artifacts</strong> and download <strong>scan-results</strong>.</div></div>
+        <div class="step"><div class="step-num">3</div><div class="step-text">Unzip it. Inside you'll find <strong>opportunities.json</strong>. Click the import box below and select that file.</div></div>
+        <div class="step"><div class="step-num">4</div><div class="step-text">Your dashboard updates instantly. Data is saved in your browser — it persists until you import a newer file or clear your browser data.</div></div>
+      </div>
+
+      <label class="import-box" for="file-input">
+        <input type="file" id="file-input" accept=".json" onchange="importFile(event)">
+        <h3>Click to select opportunities.json</h3>
+        <p>Or drag and drop the file here.<br>Your data stays 100% local — nothing is sent anywhere.</p>
+      </label>
+
+      <div style="margin-top:20px">
+        <div class="page-title" style="font-size:15px;margin-bottom:8px">Or load sample data</div>
+        <p style="font-size:13px;color:#666;margin-bottom:10px">See what the dashboard looks like with example opportunities before your first real scan.</p>
+        <button class="btn btn-teal" onclick="loadSample()">Load Sample Data</button>
+        <button class="btn btn-gray" style="margin-left:8px" onclick="clearAll()">Clear All Data</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+// ─────────────────────────────────────────────────────────────────────────────
+// State
+// ─────────────────────────────────────────────────────────────────────────────
+let DATA = { rfps: [], jobs: [], generated: "" };
+let TRACKER = {}; // id -> { status, date, title, org, type, doc_note }
+
+const STATUS = { NEW:"new", SEEN:"seen", SAVED:"saved", APPLIED:"applied", HIDDEN:"hidden" };
+const LS_DATA    = "rfp_job_scout_opps";
+const LS_TRACKER = "rfp_job_scout_tracker";
+
+function loadState() {
+  try { DATA    = JSON.parse(localStorage.getItem(LS_DATA)    || "null") || { rfps:[], jobs:[], generated:"" }; } catch(e){}
+  try { TRACKER = JSON.parse(localStorage.getItem(LS_TRACKER) || "{}"); } catch(e){}
+}
+function saveTracker() { localStorage.setItem(LS_TRACKER, JSON.stringify(TRACKER)); }
+function saveData()    { localStorage.setItem(LS_DATA,    JSON.stringify(DATA));    }
+
+function getStatus(id) { return (TRACKER[id] || {}).status || STATUS.NEW; }
+function setStatus(id, status, meta={}) {
+  TRACKER[id] = { ...(TRACKER[id]||{}), status, updated: new Date().toISOString(), ...meta };
+  saveTracker();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Scoring colors
+// ─────────────────────────────────────────────────────────────────────────────
+function sc(score, max=40) {
+  const p = score/max;
+  if(p>=.65) return "#0F6E56";
+  if(p>=.4)  return "#185FA5";
+  if(p>=.2)  return "#854F0B";
+  return "#888780";
+}
+function scoreBar(score, max=40) {
+  const w = Math.min(Math.round(score/max*100),100);
+  return `<div class="score-bar"><div class="score-fill" style="width:${w}%;background:${sc(score,max)}"></div></div>`;
+}
+function pills(kws=[]) {
+  return '<div class="pills">' + kws.slice(0,5).map(k=>`<span class="pill">${k}</span>`).join("") + '</div>';
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Type badge
+// ─────────────────────────────────────────────────────────────────────────────
+function typeBadge(opp) {
+  if(opp.type==="rfp") {
+    if(opp.is_local) return '<span class="badge badge-blue">📍 Local / Drone</span>';
+    return '<span class="badge badge-gray">RFP</span>';
+  }
+  const map = {
+    "Federal":"badge-blue","PhD / Research":"badge-amber","UAP Research":"badge-purple",
+    "Teaching":"badge-green","Fellowship":"badge-amber","Research Contract":"badge-purple",
+    "Space Research":"badge-purple","Defense / Intel":"badge-red","Defense / Aerospace":"badge-red",
+    "Space / Geospatial":"badge-blue","GIS Technology":"badge-blue","Private":"badge-gray",
+  };
+  const cls = map[opp.job_type] || "badge-gray";
+  return `<span class="badge ${cls}">${opp.job_type||"Job"}</span>`;
+}
+
+function statusBadge(id) {
+  const s = getStatus(id);
+  if(s===STATUS.APPLIED) return '<span class="badge badge-green">✓ Applied</span>';
+  if(s===STATUS.SAVED)   return '<span class="badge badge-amber">🔖 Saved</span>';
+  return "";
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Big card
+// ─────────────────────────────────────────────────────────────────────────────
+function bigCard(opp, rank) {
+  const id     = opp.id;
+  const status = getStatus(id);
+  const color  = sc(opp.score);
+  const applied= status === STATUS.APPLIED;
+  const saved  = status === STATUS.SAVED;
+  const otype  = opp.type;
+
+  const metaParts = [
+    opp.source,
+    opp.deadline ? "Deadline: " + opp.deadline.slice(0,10) : "",
+    opp.salary   ? opp.salary : "",
+    opp.location ? opp.location.slice(0,40) : "",
+    opp.set_aside? opp.set_aside : "",
+  ].filter(Boolean).join("  ·  ");
+
+  return `
+  <div class="card ${applied?'applied-card':''}" id="card-${id}" style="border-left:4px solid ${color}">
+    <div class="card-header">
+      <div class="card-body">
+        <div class="card-rank">#${rank} ${typeBadge(opp)} ${statusBadge(id)}</div>
+        <div class="card-title">${opp.title.slice(0,90)}</div>
+        <div class="card-org">${opp.org||""}</div>
+        <div class="card-meta">${metaParts}</div>
+        <div class="card-desc">${(opp.description||"").slice(0,220)}...</div>
+        ${pills(opp.matched_kws)}
+        ${scoreBar(opp.score)}
+      </div>
+      <div class="score-box">
+        <div class="score-num" style="color:${color}">${opp.score}</div>
+        <div class="score-lbl">score</div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <a href="${opp.url||'#'}" target="_blank" class="btn btn-blue">View ${otype==="rfp"?"RFP":"Job"} →</a>
+      ${applied
+        ? `<button class="btn btn-disabled" disabled>✓ Applied</button>`
+        : `<button class="btn btn-teal" onclick="openGenerate('${id}','${otype}')">Generate Application</button>`
+      }
+      <button class="btn ${applied?'btn-green':'btn-amber'}" onclick="toggleApplied('${id}','${otype}',${applied})" title="${applied?'Undo applied mark':'Mark as applied without generating doc'}">
+        ${applied ? '↩ Undo Applied' : '✓ Mark Applied'}
+      </button>
+      ${saved
+        ? `<button class="btn btn-green" onclick="toggleSave('${id}')">🔖 Saved</button>`
+        : `<button class="btn btn-gray" onclick="toggleSave('${id}')">🔖 Save</button>`
+      }
+      <button class="btn btn-red" onclick="hideOpp('${id}')">✕ Not Interested</button>
+    </div>
+  </div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Table rows
+// ─────────────────────────────────────────────────────────────────────────────
+function tableRow(opp, i, otype) {
+  const id     = opp.id;
+  const status = getStatus(id);
+  const color  = sc(opp.score);
+  const col3   = otype==="rfp" ? (opp.deadline||"—").slice(0,10) : (opp.job_type||"");
+  return `
+  <tr id="tr-${id}" class="${status===STATUS.APPLIED?'applied':''}">
+    <td style="color:#aaa;width:30px">${i+1}</td>
+    <td><div class="tbl-title" title="${opp.title}">${opp.title.slice(0,60)}</div></td>
+    <td><div class="tbl-org" title="${opp.org}">${(opp.org||"").slice(0,30)}</div></td>
+    <td style="white-space:nowrap;font-size:11px;color:#666">${col3}</td>
+    <td><span class="tbl-score" style="color:${color}">${opp.score}</span></td>
+    <td>${statusBadge(id)}</td>
+    <td>
+      <div style="display:flex;gap:5px">
+        <a href="${opp.url||'#'}" target="_blank" class="btn btn-blue" style="padding:3px 9px;font-size:11px">View</a>
+        <button class="btn btn-teal" style="padding:3px 9px;font-size:11px" onclick="openGenerate('${id}','${otype}')">Apply</button>
+        <button class="btn btn-amber" style="padding:3px 9px;font-size:11px" onclick="toggleApplied('${id}','${otype}',${status===STATUS.APPLIED})">${status===STATUS.APPLIED?'↩':'✓'}</button>
+        <button class="btn btn-red" style="padding:3px 9px;font-size:11px" onclick="hideOpp('${id}')">✕</button>
+      </div>
+    </td>
+  </tr>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Actions
+// ─────────────────────────────────────────────────────────────────────────────
+function toggleApplied(id, otype, isApplied) {
+  if(isApplied) {
+    setStatus(id, STATUS.SEEN);
+    toast("Marked as not applied");
+  } else {
+    const opp = findOpp(id);
+    setStatus(id, STATUS.APPLIED, {
+      title: opp?.title||"", org: opp?.org||"",
+      otype, applied_date: new Date().toISOString(), doc_note:"Manually marked"
+    });
+    toast("✓ Marked as applied — added to history");
+  }
+  renderAll();
+}
+
+function toggleSave(id) {
+  const s = getStatus(id);
+  if(s === STATUS.SAVED) { setStatus(id, STATUS.SEEN); toast("Removed from saved"); }
+  else { const opp=findOpp(id); setStatus(id, STATUS.SAVED, {title:opp?.title||"",org:opp?.org||""}); toast("🔖 Saved for later"); }
+  renderAll();
+}
+
+function hideOpp(id) {
+  setStatus(id, STATUS.HIDDEN);
+  const card = document.getElementById("card-"+id);
+  const row  = document.getElementById("tr-"+id);
+  if(card){ card.style.transition="opacity .3s,max-height .3s"; card.style.opacity="0"; card.style.maxHeight="0"; card.style.overflow="hidden"; setTimeout(()=>card.remove(),350); }
+  if(row) row.style.display="none";
+  updateStats();
+  toast("Hidden — won't appear in future digests");
+}
+
+function openGenerate(id, otype) {
+  const opp = findOpp(id);
+  if(!opp) return;
+  document.getElementById("modal-title").textContent = `Generate Application`;
+  document.getElementById("modal-content").innerHTML = `
+    <p><strong>${opp.title.slice(0,70)}</strong></p>
+    <p style="color:#666">${opp.org||""} ${opp.deadline?"· Deadline: "+opp.deadline.slice(0,10):""}</p>
+    <p>This will generate a tailored ${otype==="rfp"?"proposal document":"cover letter + resume"} using Claude AI. Here's how it works with the local dashboard:</p>
+    <div class="step" style="margin-top:12px"><div class="step-num">1</div><div class="step-text">Go to your GitHub repo → <strong>Actions</strong> tab → <strong>Generate Application</strong> workflow</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text">Click <strong>Run workflow</strong> and enter:<br>· Opportunity ID: <code style="background:#f0f0f0;padding:1px 5px;border-radius:4px;font-size:12px">${id}</code><br>· Type: <code style="background:#f0f0f0;padding:1px 5px;border-radius:4px;font-size:12px">${otype}</code></div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text">In ~2 minutes, download the <strong>.docx</strong> from the workflow's Artifacts section</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text">Review, personalize any details, then submit!</div></div>
+    <div class="warn-box">Always review the generated document carefully before submitting. Your GISP certification and Secretary's Honor Award should be prominent.</div>
+    <div class="btn-row" style="margin-top:14px">
+      <button class="btn btn-teal" onclick="confirmGenerate('${id}','${otype}')">✓ Mark as Generating</button>
+      <button class="btn btn-gray" onclick="closeModal()">Cancel</button>
+    </div>`;
+  openModal();
+}
+
+function confirmGenerate(id, otype) {
+  const opp = findOpp(id);
+  setStatus(id, STATUS.APPLIED, {
+    title: opp?.title||"", org: opp?.org||"",
+    otype, applied_date: new Date().toISOString(),
+    doc_note: "Application document generated via GitHub Actions"
+  });
+  closeModal();
+  renderAll();
+  toast("✓ Marked as applied — check your GitHub Actions for the .docx");
+}
+
+function clearHidden() {
+  if(!confirm("Clear all 'Not Interested' records? Hidden opportunities may reappear in future imports.")) return;
+  Object.keys(TRACKER).forEach(id => { if(TRACKER[id]?.status===STATUS.HIDDEN) delete TRACKER[id]; });
+  saveTracker();
+  toast("Hidden records cleared");
+}
+
+function clearAll() {
+  if(!confirm("Clear all opportunity data and tracking? This cannot be undone.")) return;
+  DATA = {rfps:[],jobs:[],generated:""};
+  TRACKER = {};
+  saveData(); saveTracker();
+  renderAll();
+  toast("All data cleared");
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Render functions
+// ─────────────────────────────────────────────────────────────────────────────
+function visibleRfps() { return DATA.rfps.filter(r=>getStatus(r.id)!==STATUS.HIDDEN); }
+function visibleJobs() { return DATA.jobs.filter(j=>getStatus(j.id)!==STATUS.HIDDEN); }
+function findOpp(id) { return [...DATA.rfps,...DATA.jobs].find(o=>o.id===id); }
+
+function renderTopRfp() {
+  const list = document.getElementById("top-rfp-list");
+  const items = visibleRfps().slice(0,10);
+  list.innerHTML = items.length ? items.map((r,i)=>bigCard(r,i+1)).join("") : emptyState("No RFP data loaded yet","Import your opportunities.json from GitHub Actions, or load sample data.");
+}
+
+function renderTopJob() {
+  const list = document.getElementById("top-job-list");
+  const items = visibleJobs().slice(0,10);
+  list.innerHTML = items.length ? items.map((j,i)=>bigCard(j,i+1)).join("") : emptyState("No job data loaded yet","Import your opportunities.json to see job matches here.");
+}
+
+function renderLocal() {
+  const list = document.getElementById("local-list");
+  const items = visibleRfps().filter(r=>r.is_local);
+  list.innerHTML = items.length ? items.map((r,i)=>bigCard(r,i+1)).join("") : emptyState("No local opportunities","No drone or local RFPs matched in the current data set. Check back after the next scan.");
+}
+
+function renderAllRfp() {
+  const q    = (document.getElementById("rfp-q")?.value||"").toLowerCase();
+  const sort = document.getElementById("rfp-sort")?.value || "score";
+  let items  = visibleRfps().filter(r=>!q||r.title.toLowerCase().includes(q)||( r.org||"").toLowerCase().includes(q));
+  if(sort==="posted")   items.sort((a,b)=>(b.posted||"").localeCompare(a.posted||""));
+  else if(sort==="deadline") items.sort((a,b)=>(a.deadline||"z").localeCompare(b.deadline||"z"));
+  document.getElementById("rfp-tbody").innerHTML = items.map((r,i)=>tableRow(r,i,"rfp")).join("") || `<tr><td colspan="7" style="text-align:center;padding:24px;color:#888">No RFPs match your search.</td></tr>`;
+}
+
+function renderAllJob() {
+  const q    = (document.getElementById("job-q")?.value||"").toLowerCase();
+  const sort = document.getElementById("job-sort")?.value || "score";
+  let items  = visibleJobs().filter(j=>!q||j.title.toLowerCase().includes(q)||(j.org||"").toLowerCase().includes(q));
+  if(sort==="org")  items.sort((a,b)=>(a.org||"").localeCompare(b.org||""));
+  else if(sort==="type") items.sort((a,b)=>(a.job_type||"").localeCompare(b.job_type||""));
+  document.getElementById("job-tbody").innerHTML = items.map((j,i)=>tableRow(j,i,"job")).join("") || `<tr><td colspan="7" style="text-align:center;padding:24px;color:#888">No jobs match your search.</td></tr>`;
+}
+
+function renderHistory() {
+  const applied = Object.entries(TRACKER)
+    .filter(([,v])=>v.status===STATUS.APPLIED)
+    .sort((a,b)=>(b[1].applied_date||"").localeCompare(a[1].applied_date||""));
+  const list = document.getElementById("history-list");
+  if(!applied.length) { list.innerHTML = emptyState("No applications yet","When you generate an application or click 'Mark Applied', it will appear here with the date."); return; }
+  list.innerHTML = applied.map(([id,rec])=>{
+    const opp  = findOpp(id);
+    const date = rec.applied_date ? new Date(rec.applied_date).toLocaleDateString("en-US",{year:"numeric",month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"}) : "";
+    const color= rec.otype==="rfp"?"#0F6E56":"#185FA5";
+    return `
+    <div class="history-row">
+      <div class="history-dot" style="background:${color}"></div>
+      <div class="history-info">
+        <div class="history-title">${rec.title||"Unknown opportunity"}</div>
+        <div class="history-meta">${rec.org||""} · ${rec.otype==="rfp"?"RFP / Contract":"Job Application"} · Applied: ${date}</div>
+        ${rec.doc_note ? `<div style="font-size:11px;color:#0F6E56;margin-top:2px">${rec.doc_note}</div>` : ""}
+      </div>
+      <div class="history-badge">
+        ${opp ? `<a href="${opp.url||'#'}" target="_blank" class="btn btn-gray" style="padding:4px 10px;font-size:11px">View →</a>` : ""}
+        <button class="btn btn-red" style="padding:4px 10px;font-size:11px;margin-left:5px" onclick="toggleApplied('${id}','${rec.otype}',true)">Undo</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderSaved() {
+  const savedIds = Object.entries(TRACKER).filter(([,v])=>v.status===STATUS.SAVED).map(([id])=>id);
+  const items    = [...DATA.rfps,...DATA.jobs].filter(o=>savedIds.includes(o.id));
+  const list     = document.getElementById("saved-list");
+  list.innerHTML = items.length ? items.map((o,i)=>bigCard(o,i+1)).join("") : emptyState("Nothing saved yet","Click the 🔖 Save button on any opportunity to bookmark it here for later review.");
+}
+
+function updateStats() {
+  const rfps    = visibleRfps();
+  const jobs    = visibleJobs();
+  const applied = Object.values(TRACKER).filter(v=>v.status===STATUS.APPLIED).length;
+  const local   = rfps.filter(r=>r.is_local).length;
+  const saved   = Object.values(TRACKER).filter(v=>v.status===STATUS.SAVED).length;
+  document.getElementById("s-rfp").textContent     = rfps.length;
+  document.getElementById("s-job").textContent     = jobs.length;
+  document.getElementById("s-applied").textContent = applied;
+  document.getElementById("s-local").textContent   = local;
+  document.getElementById("n-rfp").textContent     = Math.min(rfps.length,10);
+  document.getElementById("n-job").textContent     = Math.min(jobs.length,10);
+  document.getElementById("n-local").textContent   = local;
+  document.getElementById("n-all-rfp").textContent = rfps.length;
+  document.getElementById("n-all-job").textContent = jobs.length;
+  document.getElementById("n-applied").textContent = applied;
+  document.getElementById("n-saved").textContent   = saved;
+  const lu = DATA.generated ? new Date(DATA.generated).toLocaleDateString("en-US",{month:"short",day:"numeric",hour:"2-digit",minute:"2-digit"}) : "Never";
+  document.getElementById("last-updated").textContent = lu;
+}
+
+function renderAll() {
+  updateStats();
+  const cur = document.querySelector(".page.active")?.id?.replace("page-","");
+  if(cur==="top-rfp")  renderTopRfp();
+  else if(cur==="top-job")  renderTopJob();
+  else if(cur==="local")    renderLocal();
+  else if(cur==="all-rfp")  renderAllRfp();
+  else if(cur==="all-job")  renderAllJob();
+  else if(cur==="history")  renderHistory();
+  else if(cur==="saved")    renderSaved();
+  else renderTopRfp();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Navigation
+// ─────────────────────────────────────────────────────────────────────────────
+function nav(page) {
+  document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
+  document.querySelectorAll(".nav-item").forEach(n=>n.classList.remove("active"));
+  document.getElementById("page-"+page).classList.add("active");
+  event.currentTarget.classList.add("active");
+  if(page==="top-rfp")  renderTopRfp();
+  else if(page==="top-job")  renderTopJob();
+  else if(page==="local")    renderLocal();
+  else if(page==="all-rfp")  renderAllRfp();
+  else if(page==="all-job")  renderAllJob();
+  else if(page==="history")  renderHistory();
+  else if(page==="saved")    renderSaved();
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Import
+// ─────────────────────────────────────────────────────────────────────────────
+function importFile(e) {
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const parsed = JSON.parse(ev.target.result);
+      DATA = { rfps: parsed.rfps||[], jobs: parsed.jobs||[], generated: parsed.generated||new Date().toISOString() };
+      saveData();
+      renderAll();
+      toast(`✅ Imported ${DATA.rfps.length} RFPs + ${DATA.jobs.length} jobs`);
+      nav("top-rfp");
+    } catch(err) {
+      toast("❌ Could not parse file — make sure it's the opportunities.json from GitHub Actions");
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = "";
+}
+
+function loadSample() {
+  DATA = {
+    generated: new Date().toISOString(),
+    rfps: [
+      {id:"sam-001",type:"rfp",source:"SAM.gov",title:"Remote Sensing Support for USFS Climate Data Analysis",org:"US Forest Service",posted:"2026-05-01",deadline:"2026-06-15",description:"Contractor needed for remote sensing and GIS support for climate change data analysis including LiDAR processing, NDVI analysis from Landsat, and web application development using ArcGIS Online and Experience Builder.",score:28,matched_kws:["remote sensing","lidar","ndvi","arcgis","gis","python"],url:"https://sam.gov",set_aside:"Small Business",naics:"541370",is_local:false,is_drone:false},
+      {id:"sbir-002",type:"rfp",source:"NASA SBIR",title:"Small Business Innovation Research — Geospatial AI for Earth Observation",org:"NASA",posted:"2026-04-28",deadline:"2026-06-01",description:"NASA seeks innovative small business proposals for GeoAI applications in Earth observation, object detection from satellite imagery, and automated change detection pipelines.",score:32,matched_kws:["nasa","geoai","object detection","satellite imagery","remote sensing","machine learning"],url:"https://sbir.nasa.gov",set_aside:"SBIR/STTR",naics:"",is_local:false,is_drone:false},
+      {id:"eva-003",type:"rfp",source:"Virginia eVA",title:"UAV Aerial Survey and Mapping Services — Roanoke County",org:"Roanoke County Government",posted:"2026-05-03",deadline:"2026-05-25",description:"Roanoke County seeks a licensed FAA Part 107 drone pilot to conduct aerial survey, photogrammetry, and high-resolution DEM collection for infrastructure planning.",score:24,matched_kws:["drone","uas","aerial survey","photogrammetry","dem","part 107"],url:"https://eva.virginia.gov",set_aside:"Virginia SWaM",naics:"541370",is_local:true,is_drone:true},
+      {id:"sam-004",type:"rfp",source:"SAM.gov",title:"GIS Application Development for NOAA Coastal Data Management",org:"NOAA",posted:"2026-04-30",deadline:"2026-06-30",description:"NOAA seeks GIS developer to build ArcGIS Online web applications for coastal monitoring, change detection, and satellite imagery analysis.",score:22,matched_kws:["gis","noaa","arcgis","satellite imagery","change detection","web mapping"],url:"https://sam.gov",set_aside:"Small Business",naics:"541512",is_local:false,is_drone:false},
+      {id:"sam-005",type:"rfp",source:"SAM.gov",title:"LiDAR Data Processing and Vegetation Analysis Contract",org:"USGS",posted:"2026-05-02",deadline:"2026-06-10",description:"USGS requires LiDAR processing, vegetation analysis, and automated classification pipeline development for national forest monitoring program.",score:26,matched_kws:["lidar","vegetation analysis","usgs","remote sensing","python","arcpy"],url:"https://sam.gov",set_aside:"Small Business Set-Aside",naics:"541370",is_local:false,is_drone:false},
+    ],
+    jobs: [
+      {id:"usa-001",type:"job",source:"USAJobs",title:"Remote Sensing Research Scientist",org:"NASA Jet Propulsion Laboratory",posted:"2026-05-01",deadline:"2026-05-31",description:"Research scientist position for satellite remote sensing, object detection algorithm development, and geospatial AI pipeline work for Earth science missions.",score:35,matched_kws:["nasa","jpl","remote sensing","object detection","geoai","satellite imagery"],url:"https://www.usajobs.gov",salary:"GS-13–GS-14 ($113k–$147k)",location:"Pasadena, CA / Remote",remote:true,job_type:"Federal"},
+      {id:"prv-002",type:"job",source:"UAP Research",title:"Remote Sensing / Sensor Data Scientist",org:"The Galileo Project (Harvard)",posted:"",deadline:"Ongoing",description:"The Galileo Project seeks scientists with remote sensing and data analysis expertise to support UAP detection sensor network analysis and anomalous phenomenon research.",score:32,matched_kws:["remote sensing","uap","anomalous","sensor","geoai","research"],url:"https://projects.iq.harvard.edu/galileo/join-us",salary:"Research stipend / competitive",location:"Remote / Cambridge MA",remote:true,job_type:"UAP Research"},
+      {id:"vt-003",type:"job",source:"PhD / Research",title:"PhD Research Assistant — Geospatial & Remote Sensing",org:"Virginia Tech",posted:"",deadline:"Ongoing",description:"Virginia Tech Geography department seeks PhD candidates for funded research assistant positions in remote sensing, UAV data analysis, and geospatial AI. Stipend + tuition waiver.",score:28,matched_kws:["remote sensing","phd","research","virginia tech","gis","uav"],url:"https://geography.vt.edu/graduate.html",salary:"$22k–$28k stipend + tuition",location:"Blacksburg, VA (40 min)",remote:false,job_type:"PhD / Research"},
+      {id:"usa-004",type:"job",source:"USAJobs",title:"GEOINT / Imagery Intelligence Analyst",org:"NGA / Defense Intelligence Agency",posted:"2026-05-01",deadline:"2026-05-28",description:"Geospatial intelligence analyst for satellite imagery analysis, object detection, and geospatial intelligence production supporting national security missions.",score:26,matched_kws:["geoint","nga","imagery analyst","object detection","remote sensing","gis"],url:"https://www.usajobs.gov",salary:"GS-12–GS-13 ($90k–$122k)",location:"Springfield, VA / Remote",remote:true,job_type:"Federal"},
+      {id:"prv-005",type:"job",source:"Space / Geospatial",title:"Geospatial AI Engineer — Satellite Imagery",org:"Maxar Technologies",posted:"",deadline:"Ongoing",description:"GeoAI engineer to develop object detection, change detection, and automated classification pipelines for commercial satellite imagery products.",score:24,matched_kws:["geoai","object detection","satellite imagery","remote sensing","machine learning","python"],url:"https://maxar.wd1.myworkdayjobs.com/maxar/jobs",salary:"$110k–$145k",location:"Remote / Westminster CO",remote:true,job_type:"Space / Geospatial"},
+    ]
+  };
+  saveData();
+  renderAll();
+  toast("✅ Sample data loaded — explore the dashboard!");
+  nav("top-rfp");
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Modal & Toast
+// ─────────────────────────────────────────────────────────────────────────────
+function openModal() { document.getElementById("modal").classList.add("open"); }
+function closeModal(){ document.getElementById("modal").classList.remove("open"); }
+document.getElementById("modal").addEventListener("click", e=>{ if(e.target===e.currentTarget) closeModal(); });
+
+let toastTimer;
+function toast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.remove("show"), 3000);
+}
+
+function emptyState(h, p) {
+  return `<div class="empty"><h3>${h}</h3><p>${p}</p></div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Init
+// ─────────────────────────────────────────────────────────────────────────────
+loadState();
+renderAll();
+</script>
+</body>
+</html>
