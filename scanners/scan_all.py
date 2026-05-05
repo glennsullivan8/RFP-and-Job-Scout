@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 SAM_API_KEY     = os.getenv("SAM_API_KEY", "")
 USAJOBS_API_KEY = os.getenv("USAJOBS_API_KEY", "")
 USAJOBS_EMAIL   = "glenn.sullivan8@gmail.com"
-DAYS_BACK       = int(os.getenv("DAYS_BACK", "3"))
+DAYS_BACK       = int(os.getenv("DAYS_BACK", "30"))
 MAX_TOTAL       = 50   # hard cap on total results per category
 
 # Roanoke VA coords for geo-filter
@@ -315,76 +315,221 @@ def _usajobs_curated() -> list[dict]:
     ]
 
 
-# ── Private companies ──────────────────────────────────────────────────────────
+# ── Dream org watch list (shown in email/dashboard as manual-check reminders) ──
+# These are NOT fake job postings — they are "check this page" reminders.
+# Only real confirmed postings (from USAJobs API or known active URLs) show
+# in the Top 10. The watch list appears as a separate section.
 
-PRIVATE_JOBS = [
-    {"name": "Leidos", "score_base": 12, "url": "https://careers.leidos.com/search/remote+sensing+GIS/jobs",
-     "kws": ["remote sensing", "gis", "geospatial", "geoint"], "type": "Defense / Intel"},
-    {"name": "Maxar Technologies", "score_base": 14, "url": "https://maxar.wd1.myworkdayjobs.com/maxar/jobs",
-     "kws": ["satellite imagery", "remote sensing", "object detection", "geoai"], "type": "Space / Geospatial"},
-    {"name": "Planet Labs", "score_base": 13, "url": "https://www.planet.com/company/careers/",
-     "kws": ["satellite imagery", "remote sensing", "gis", "geospatial"], "type": "Space / Geospatial"},
-    {"name": "Lockheed Martin", "score_base": 12, "url": "https://www.lockheedmartinjobs.com/search-jobs/remote%20sensing%20GIS/694/1",
-     "kws": ["remote sensing", "gis", "geospatial", "lidar"], "type": "Defense / Aerospace"},
-    {"name": "Raytheon Technologies", "score_base": 12, "url": "https://careers.rtx.com/global/en/search-results?keywords=remote+sensing+GIS",
-     "kws": ["remote sensing", "sensor", "imagery", "geospatial"], "type": "Defense / Aerospace"},
-    {"name": "Radiance Technologies", "score_base": 11, "url": "https://www.radiancetech.com/careers/",
-     "kws": ["remote sensing", "gis", "geospatial"], "type": "Defense"},
-    {"name": "Boeing", "score_base": 11, "url": "https://jobs.boeing.com/search-jobs/remote%20sensing%20GIS/185/1",
-     "kws": ["remote sensing", "satellite", "gis"], "type": "Aerospace"},
-    {"name": "Esri", "score_base": 13, "url": "https://www.esri.com/en-us/about/careers/job-search",
-     "kws": ["gis developer", "arcgis", "remote sensing", "geospatial"], "type": "GIS Technology"},
+DREAM_ORG_WATCHLIST = [
+    # UAP / Space Research — check job pages manually each week
+    {"name": "The Galileo Project (Harvard)",
+     "jobs_url": "https://galileo.hsites.harvard.edu/job-opportunities",
+     "note": "Postdoctoral & researcher roles with Prof. Avi Loeb. Multi-sensor UAP observatory.",
+     "type": "UAP Research", "score": 20},
+    {"name": "SETI Institute",
+     "jobs_url": "https://www.seti.org/about-us/careers",
+     "note": "Research scientist, data analyst, and astronomer roles.",
+     "type": "Space Research", "score": 16},
+    {"name": "Sol Foundation",
+     "jobs_url": "https://thesolfoundation.org",
+     "note": "UAP policy and interdisciplinary research positions.",
+     "type": "UAP Research", "score": 14},
+    {"name": "Bigelow Aerospace",
+     "jobs_url": "https://bigelowaerospace.com",
+     "note": "Commercial space habitat and sensor R&D roles.",
+     "type": "Commercial Space", "score": 11},
+    # Defense / Aerospace
+    {"name": "Lockheed Martin",
+     "jobs_url": "https://www.lockheedmartinjobs.com/search-jobs?k=remote+sensing+GIS",
+     "note": "Search remote sensing, GIS, geospatial intelligence roles.",
+     "type": "Defense / Aerospace", "score": 13},
+    {"name": "Raytheon Technologies (RTX)",
+     "jobs_url": "https://careers.rtx.com/global/en/search-results?keywords=remote+sensing",
+     "note": "Sensor systems, ISR, geospatial analyst roles.",
+     "type": "Defense / Aerospace", "score": 13},
+    {"name": "Radiance Technologies",
+     "jobs_url": "https://www.radiancetech.com/careers/",
+     "note": "Defense remote sensing and geospatial engineer roles.",
+     "type": "Defense", "score": 12},
+    {"name": "Boeing",
+     "jobs_url": "https://jobs.boeing.com/search-jobs?q=remote+sensing+GIS",
+     "note": "Space, satellite, UAV, and GIS analyst roles.",
+     "type": "Aerospace", "score": 12},
+    # Geospatial / Satellite
+    {"name": "Maxar Technologies",
+     "jobs_url": "https://maxar.wd1.myworkdayjobs.com/maxar",
+     "note": "Object detection, GeoAI, satellite imagery analyst roles.",
+     "type": "Space / Geospatial", "score": 15},
+    {"name": "Planet Labs",
+     "jobs_url": "https://www.planet.com/company/careers/",
+     "note": "Remote sensing, GIS, satellite data science roles.",
+     "type": "Space / Geospatial", "score": 14},
+    {"name": "Esri",
+     "jobs_url": "https://www.esri.com/en-us/about/careers/job-search#@criteriaN=200003980",
+     "note": "ArcGIS developer, GIS engineer, product specialist roles.",
+     "type": "GIS Technology", "score": 14},
+    # Virginia Tech
+    {"name": "Virginia Tech — Faculty & Research Positions",
+     "jobs_url": "https://careers.vt.edu",
+     "note": "Adjunct lecturer (GIS/Remote Sensing), research scientist, PhD RA positions.",
+     "type": "Teaching / Research", "score": 16},
+    {"name": "Virginia Tech — Graduate Admissions (PhD)",
+     "jobs_url": "https://geography.vt.edu/graduate.html",
+     "note": "Funded PhD RA in geospatial, remote sensing, environmental analysis. 40 min away!",
+     "type": "PhD / Research", "score": 17},
+    {"name": "NASA JPL — Opportunities",
+     "jobs_url": "https://www.jpl.nasa.gov/careers",
+     "note": "Research scientist, engineer, and postdoc roles at Jet Propulsion Lab.",
+     "type": "Space Research", "score": 20},
+    {"name": "NASA FINESST Fellowship",
+     "jobs_url": "https://science.nasa.gov/researchers/solicitations/roses-2024/",
+     "note": "~$50k/yr research fellowship. Glenn's NASA MTRI background is competitive.",
+     "type": "Fellowship", "score": 18},
+    # ── University research job boards ──────────────────────────────────────
+    # Your alma mater
+    {"name": "University of Michigan — Remote Sensing & GIS Research",
+     "jobs_url": "https://careers.umich.edu/",
+     "note": "Glenn's alma mater. Check SNRE, Geography, EECS, and CLASP departments. Also: MTRI (Michigan Tech Research Institute) where Glenn worked NASA projects.",
+     "type": "University Research", "score": 17},
+    {"name": "U of Michigan — SNRE / SEAS Research Positions",
+     "jobs_url": "https://seas.umich.edu/research/research-positions",
+     "note": "School for Environment & Sustainability — remote sensing, environmental modeling, and GIS faculty/research scientist postings.",
+     "type": "University Research", "score": 16},
+    # Top remote sensing programs
+    {"name": "Stanford University — Earth System Science / Remote Sensing",
+     "jobs_url": "https://earth.stanford.edu/research/jobs",
+     "note": "Stanford ESS and the Hansen Lab. Remote sensing, satellite data, GeoAI, and climate systems research. Also check Stanford HAI for GeoAI positions.",
+     "type": "University Research", "score": 18},
+    {"name": "MIT — Earth, Atmospheric & Planetary Sciences / CSAIL",
+     "jobs_url": "https://careers.mit.edu/",
+     "note": "MIT EAPS and Computer Science AI Lab. Remote sensing algorithms, satellite data science, GeoAI. Also check MIT Lincoln Laboratory for defense remote sensing.",
+     "type": "University Research", "score": 18},
+    {"name": "Harvard University — Center for Geographic Analysis / Galileo Project",
+     "jobs_url": "https://galileo.hsites.harvard.edu/job-opportunities",
+     "note": "Galileo Project (UAP research with Prof. Avi Loeb) + Center for Geographic Analysis. Check both — Galileo posts sensor/remote sensing research roles.",
+     "type": "University Research / UAP", "score": 20},
+    {"name": "UC Berkeley — ESPM / Geography / Berkeley Seismological Lab",
+     "jobs_url": "https://jobs.berkeley.edu/",
+     "note": "Strong remote sensing, environmental modeling, and geospatial AI programs. Also check Berkeley AI Research (BAIR) for GeoAI research scientist roles.",
+     "type": "University Research", "score": 17},
+    {"name": "University of Colorado Boulder — CIRES / LASP",
+     "jobs_url": "https://jobs.colorado.edu/",
+     "note": "CIRES (Cooperative Institute for Research in Environmental Sciences) and LASP (Laboratory for Atmospheric & Space Physics). Excellent satellite remote sensing research groups.",
+     "type": "University Research", "score": 17},
+    {"name": "Colorado State University — CIRA / Atmospheric Science",
+     "jobs_url": "https://jobs.colostate.edu/",
+     "note": "CIRA (Cooperative Institute for Research in the Atmosphere) — strong NOAA-partnered satellite and remote sensing research. Environmental intelligence and hazard monitoring.",
+     "type": "University Research", "score": 16},
+    {"name": "Penn State — Geography / Earth & Environmental Systems",
+     "jobs_url": "https://hr.psu.edu/careers",
+     "note": "Top-ranked geography and remote sensing program. Strong NASA and NOAA partnerships. Check GeoVISTA Center and Earth & Environmental Systems Institute (EESI).",
+     "type": "University Research", "score": 17},
+    {"name": "USC — Spatial Sciences Institute / Viterbi School",
+     "jobs_url": "https://usccareers.usc.edu/",
+     "note": "USC Spatial Sciences Institute (SSI) — one of the top GIS and spatial data science programs in the US. Research scientist and faculty positions in geospatial AI and remote sensing.",
+     "type": "University Research", "score": 17},
+    # Additional strong programs Claude recommends
+    {"name": "University of Maryland — ESSIC / GEOG Dept",
+     "jobs_url": "https://geog.umd.edu/resources/job-opportunities",
+     "note": "Earth System Science Interdisciplinary Center (ESSIC) has strong NASA/NOAA partnerships. UMD Geography maintains an excellent job board: geog.umd.edu/resources/job-opportunities",
+     "type": "University Research", "score": 17},
+    {"name": "George Mason University — Geography & GeoInfo Science",
+     "jobs_url": "https://jobs.gmu.edu/",
+     "note": "Center for Spatial Information Science and Systems. Near DC with strong NGA and DoD connections. Remote sensing, GeoAI, and geospatial intelligence focus.",
+     "type": "University Research", "score": 16},
+    {"name": "Ohio State University — Byrd Polar & Climate Research / Geography",
+     "jobs_url": "https://hr.osu.edu/careers/",
+     "note": "Strong LiDAR, satellite remote sensing, and polar science programs. Byrd Polar Center does important glacier and climate remote sensing research.",
+     "type": "University Research", "score": 15},
+    {"name": "University of Arizona — Lunar & Planetary Lab / Steward Observatory",
+     "jobs_url": "https://hr.arizona.edu/careers",
+     "note": "LPL and Steward Observatory post research scientist and postdoc roles in planetary remote sensing, UAP-adjacent anomaly detection, and astronomical instrumentation.",
+     "type": "University Research / Space", "score": 16},
+    {"name": "Texas A&M — TAMU Geography / Remote Sensing Center",
+     "jobs_url": "https://jobs.tamu.edu/",
+     "note": "One of the top US remote sensing research programs. Strong agricultural, environmental, and hazard remote sensing focus. NOAA and USDA partnerships.",
+     "type": "University Research", "score": 15},
+    {"name": "University of Wisconsin-Madison — SSEC / Nelson Institute",
+     "jobs_url": "https://jobs.wisc.edu/",
+     "note": "Space Science & Engineering Center (SSEC) — strong satellite remote sensing and atmospheric science. CIMSS (Cooperative Institute for Meteorological Satellite Studies) NOAA partner.",
+     "type": "University Research", "score": 16},
+    # Key job boards to check weekly
+    {"name": "AAG Career Center (American Assoc of Geographers)",
+     "jobs_url": "https://jobs.aag.org/jobs/",
+     "note": "Best single job board for university GIS/remote sensing research positions. Updated frequently. Always check this weekly.",
+     "type": "Job Board", "score": 15},
+    {"name": "AGU Career Center (American Geophysical Union)",
+     "jobs_url": "https://findajob.agu.org/jobs/",
+     "note": "Best board for earth science, remote sensing, and space research positions. Covers postdocs, research scientists, and faculty at universities and labs.",
+     "type": "Job Board", "score": 15},
+    {"name": "USGIF Job Board (Geospatial Intelligence Foundation)",
+     "jobs_url": "https://usgif.org/careers/",
+     "note": "Geospatial intelligence and GEOINT-focused jobs. Strong DoD/NGA pipeline. Internship and full-time research roles.",
+     "type": "Job Board / GEOINT", "score": 14},
 ]
 
-RESEARCH_JOBS = [
-    {"name": "The Galileo Project (Harvard)", "score_base": 18,
-     "url": "https://projects.iq.harvard.edu/galileo/join-us",
-     "kws": ["remote sensing", "uap", "anomalous", "sensor", "research"], "type": "UAP Research"},
-    {"name": "SETI Institute", "score_base": 15, "url": "https://www.seti.org/about-us/careers",
-     "kws": ["astronomy", "research", "data science", "signal analysis"], "type": "Space Research"},
-    {"name": "Sol Foundation", "score_base": 14, "url": "https://thesolfoundation.org",
-     "kws": ["uap", "research", "remote sensing"], "type": "UAP Research"},
-    {"name": "NASA JPL", "score_base": 20, "url": "https://www.jpl.nasa.gov/edu/intern/apply/",
-     "kws": ["remote sensing", "lidar", "satellite", "space"], "type": "Space Research"},
-    {"name": "MUFON / AIAA UAP", "score_base": 10, "url": "https://www.mufon.com",
-     "kws": ["uap", "research", "sensor"], "type": "UAP Research"},
-    {"name": "Bigelow Aerospace", "score_base": 10, "url": "https://bigelowaerospace.com",
-     "kws": ["space", "aerospace", "sensor"], "type": "Commercial Space"},
-]
 
-VT_TARGETS = [
-    {"name": "Virginia Tech — PhD / Research Assistant", "score_base": 16,
-     "url": "https://geography.vt.edu/graduate.html",
-     "kws": ["remote sensing", "gis", "geospatial", "phd", "research"], "type": "PhD / Research"},
-    {"name": "Virginia Tech — Adjunct / Lecturer (GIS or Remote Sensing)", "score_base": 15,
-     "url": "https://careers.vt.edu", "kws": ["gis", "remote sensing", "teaching"], "type": "Teaching"},
-    {"name": "VT Transportation Research Council — Drone & GIS Contracts", "score_base": 14,
-     "url": "https://vtrc.vt.edu/", "kws": ["drone", "gis", "remote sensing", "survey"], "type": "Research Contract"},
-    {"name": "VT-NASA Joint Research Proposal", "score_base": 13,
-     "url": "https://research.vt.edu/", "kws": ["nasa", "research", "remote sensing"], "type": "Funding / Collaboration"},
-    {"name": "NASA FINESST Fellowship (via VT)", "score_base": 17,
-     "url": "https://science.nasa.gov/researchers/solicitations/roses-2024/",
-     "kws": ["nasa", "fellowship", "research", "remote sensing"], "type": "Fellowship"},
-]
-
-
-def _build_private_jobs() -> list[dict]:
-    jobs = []
-    for co in PRIVATE_JOBS + RESEARCH_JOBS + VT_TARGETS:
-        jobs.append({
-            "id": _make_id("prv", co["name"]),
-            "type": "job", "source": co.get("type", "Private"),
-            "title": f"Remote Sensing / GIS Roles — {co['name']}",
-            "org": co["name"], "posted": "", "deadline": "Ongoing",
-            "description": f"Search for {', '.join(co['kws'][:3])} positions at {co['name']}.",
-            "score": co["score_base"],
-            "matched_kws": co["kws"],
-            "url": co["url"],
+def _build_watchlist_reminders() -> list[dict]:
+    """
+    Build watch list entries. These show as a SEPARATE section in the email
+    and dashboard — clearly labeled as 'check this page' not confirmed postings.
+    Scored slightly lower so real USAJobs postings always rank above them.
+    """
+    items = []
+    for org in DREAM_ORG_WATCHLIST:
+        items.append({
+            "id": _make_id("watch", org["name"]),
+            "type": "job",
+            "source": "Watch List",
+            "title": f"Check for openings: {org['name']}",
+            "org": org["name"],
+            "posted": "",
+            "deadline": "Check page",
+            "description": org["note"],
+            "score": org["score"],
+            "matched_kws": ["remote sensing", "gis", "research"],
+            "url": org["jobs_url"],
             "salary": "Competitive / Stipend",
-            "location": "Various", "remote": True,
-            "job_type": co.get("type", "Private"),
+            "location": "Various",
+            "remote": True,
+            "job_type": org["type"],
+            "is_watchlist": True,
         })
-    return jobs
+    return items
+
+
+# ── Virginia Tech curated RFP / funding opportunities ─────────────────────────
+
+VT_RFP_TARGETS = [
+    {"id":"vt-rfp-vtrc","type":"rfp","source":"Virginia Tech — VTRC",
+     "title":"VT Transportation Research Council — Drone & GIS Contracts",
+     "org":"Virginia Tech / VTRC","posted":"","deadline":"Ongoing",
+     "description":"VTRC regularly issues contracts for drone survey, GIS, remote sensing, and geospatial data management. 40 min from Salem VA — perfect for Niche Management LLC.",
+     "score":22,"matched_kws":["drone","gis","remote sensing","aerial survey","virginia tech"],
+     "url":"https://vtrc.vt.edu/","set_aside":"Small Business / Research","naics":"541370","is_local":True,"is_drone":True},
+    {"id":"vt-rfp-research","type":"rfp","source":"Virginia Tech — Research Office",
+     "title":"VT Office of Research — Geospatial & Remote Sensing Subcontracts",
+     "org":"Virginia Tech","posted":"","deadline":"Ongoing",
+     "description":"VT Research Office issues subcontracts for geospatial AI, remote sensing, environmental monitoring, and UAV research. Co-investigator and consultant roles for industry partners.",
+     "score":20,"matched_kws":["remote sensing","geoai","research","virginia tech","funding"],
+     "url":"https://research.vt.edu/","set_aside":"Research Collaboration","naics":"541720","is_local":True,"is_drone":False},
+    {"id":"vt-rfp-finesst","type":"rfp","source":"NASA FINESST via Virginia Tech",
+     "title":"NASA FINESST Fellowship — Earth & Space Science (via VT)",
+     "org":"NASA / Virginia Tech","posted":"","deadline":"See NASA ROSES",
+     "description":"NASA FINESST pays ~50k/yr stipend. Glenn's NASA MTRI + LiDAR/NDVI background makes him competitive. Pursue through Virginia Tech as host institution.",
+     "score":24,"matched_kws":["nasa","fellowship","remote sensing","research","virginia tech","lidar"],
+     "url":"https://science.nasa.gov/researchers/solicitations/roses-2024/","set_aside":"NASA Fellowship","naics":"541720","is_local":True,"is_drone":False},
+    {"id":"vt-rfp-ipg","type":"rfp","source":"Virginia Tech — VTIPG",
+     "title":"VT Institute for Policy & Governance — Geospatial Research Contracts",
+     "org":"Virginia Tech / VTIPG","posted":"","deadline":"Ongoing",
+     "description":"VTIPG issues research contracts in environmental monitoring, land use, geospatial policy, and remote sensing applications.",
+     "score":18,"matched_kws":["geospatial","remote sensing","environmental monitoring","research","virginia tech"],
+     "url":"https://vtipg.org/","set_aside":"Research Contract","naics":"541690","is_local":True,"is_drone":False},
+]
+
+def _scan_vt_opportunities() -> list[dict]:
+    logger.info(f"Virginia Tech targets: {len(VT_RFP_TARGETS)} curated opportunities")
+    return VT_RFP_TARGETS
 
 
 # ── Main entry ─────────────────────────────────────────────────────────────────
@@ -397,8 +542,8 @@ def run_all_scans() -> tuple[list[dict], list[dict]]:
     logger.info("Starting full scan...")
 
     # Gather
-    raw_rfps = _scan_sam() + _scan_sbir() + _scan_eva()
-    raw_jobs = _scan_usajobs() + _build_private_jobs()
+    raw_rfps = _scan_sam() + _scan_sbir() + _scan_eva() + _scan_vt_opportunities()
+    raw_jobs = _scan_usajobs() + _build_watchlist_reminders()
 
     # Deduplicate
     rfps = _dedup(raw_rfps)

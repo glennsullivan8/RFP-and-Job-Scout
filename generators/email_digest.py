@@ -132,13 +132,15 @@ def _mini_row(opp: dict, rank: int, opp_type: str) -> str:
 def build_html(rfps: list[dict], jobs: list[dict]) -> str:
     date_str   = datetime.now().strftime("%A, %B %d, %Y")
     top_rfps   = rfps[:10]
-    top_jobs   = jobs[:10]
+    real_jobs  = [j for j in jobs if not j.get('is_watchlist')]
+    watchlist  = [j for j in jobs if j.get('is_watchlist')]
+    top_jobs   = real_jobs[:10]
     local_rfps = [r for r in rfps if r.get("is_local") and r not in top_rfps][:15]
     rest_rfps  = [r for r in rfps[10:] if not r.get("is_local")][:30]
-    rest_jobs  = jobs[10:40]
+    rest_jobs  = real_jobs[10:40]
 
     rfp_cards = "".join(_rfp_card(r, i+1) for i, r in enumerate(top_rfps)) or "<p style='color:#888;font-style:italic'>No new RFPs matched today.</p>"
-    job_cards = "".join(_job_card(j, i+1) for i, j in enumerate(top_jobs)) or "<p style='color:#888;font-style:italic'>No new job matches today.</p>"
+    job_cards = "".join(_job_card(j, i+1) for i, j in enumerate(top_jobs)) or "<p style='color:#888;font-style:italic'>No new confirmed job postings found. Check the watch list below for your dream organizations.</p>"
 
     local_section = ""
     if local_rfps:
@@ -175,11 +177,17 @@ def build_html(rfps: list[dict], jobs: list[dict]) -> str:
           <tbody>{rows}</tbody>
         </table>"""
 
+    # Split real jobs from watchlist reminders
+    real_jobs     = [j for j in jobs if not j.get("is_watchlist")]
+    watchlist     = [j for j in jobs if j.get("is_watchlist")]
+    top_jobs      = real_jobs[:10]
+    rest_jobs     = real_jobs[10:40]
+
     rest_job_section = ""
     if rest_jobs:
         rows = "".join(_mini_row(j, i+1, "job") for i, j in enumerate(rest_jobs))
         rest_job_section = f"""
-        <div style="font-size:15px;font-weight:600;color:#111;margin:28px 0 4px">All Other Job Matches ({len(rest_jobs)} of {len(jobs)-10})</div>
+        <div style="font-size:15px;font-weight:600;color:#111;margin:28px 0 4px">All Other Job Matches ({len(rest_jobs)})</div>
         <table style="width:100%;border-collapse:collapse;background:white;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden">
           <thead><tr style="background:#F1EFE8">
             <th style="padding:8px 10px;font-size:11px;color:#5F5E5A;text-align:left">#</th>
@@ -190,6 +198,34 @@ def build_html(rfps: list[dict], jobs: list[dict]) -> str:
             <th style="padding:8px 10px;font-size:11px;color:#5F5E5A;text-align:left">Links</th>
           </tr></thead>
           <tbody>{rows}</tbody>
+        </table>"""
+
+    # Watchlist section — clearly labeled as manual check reminders
+    watchlist_section = ""
+    if watchlist:
+        wrows = "".join(f"""
+        <tr>
+          <td style="padding:8px 10px;font-size:12px;color:#533AB7;font-weight:500">{w.get('job_type','')}</td>
+          <td style="padding:8px 10px;font-size:13px;color:#111;font-weight:500">{w.get('org','')}</td>
+          <td style="padding:8px 10px;font-size:12px;color:#444">{w.get('description','')[:80]}...</td>
+          <td style="padding:8px 10px">
+            <a href="{w.get('url','#')}" style="display:inline-block;background:#EEEDFE;color:#533AB7;padding:4px 10px;border-radius:5px;font-size:11px;text-decoration:none">Check page →</a>
+          </td>
+        </tr>""" for w in watchlist)
+        watchlist_section = f"""
+        <div style="font-size:18px;font-weight:600;color:#111;margin:28px 0 4px">👀 Dream Org Watch List</div>
+        <div style="font-size:12px;color:#666;margin-bottom:8px">Check these pages manually — no confirmed postings right now, but these are your highest-priority organizations</div>
+        <div style="background:#FAEEDA;border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px;color:#854F0B">
+          <strong>How to use:</strong> Visit each link to check for new postings. When something is posted (like the Galileo Project Postdoctoral position), come to Claude with the job description and we'll generate a tailored application together.
+        </div>
+        <table style="width:100%;border-collapse:collapse;background:white;border:1px solid #e8e8e8;border-radius:8px;overflow:hidden">
+          <thead><tr style="background:#EEEDFE">
+            <th style="padding:8px 10px;font-size:11px;color:#533AB7;text-align:left">Type</th>
+            <th style="padding:8px 10px;font-size:11px;color:#533AB7;text-align:left">Organization</th>
+            <th style="padding:8px 10px;font-size:11px;color:#533AB7;text-align:left">What to look for</th>
+            <th style="padding:8px 10px;font-size:11px;color:#533AB7;text-align:left">Link</th>
+          </tr></thead>
+          <tbody>{wrows}</tbody>
         </table>"""
 
     return f"""<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
@@ -220,6 +256,7 @@ def build_html(rfps: list[dict], jobs: list[dict]) -> str:
   {local_section}
   {rest_rfp_section}
   {rest_job_section}
+  {watchlist_section}
 
   <div style="text-align:center;margin-top:28px;padding-top:18px;border-top:1px solid #ddd">
     <a href="{DASHBOARD_URL}" style="display:inline-block;background:#0F6E56;color:white;padding:10px 24px;border-radius:8px;text-decoration:none;font-size:13px;margin-bottom:14px">Open Full Dashboard</a>
