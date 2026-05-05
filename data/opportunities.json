@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-05T17:56:14.590771",
+  "generated": "2026-05-05T17:56:57.014215",
   "rfp_count": 4,
-  "job_count": 35,
+  "job_count": 45,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -99,6 +99,28 @@
   ],
   "jobs": [
     {
+      "id": "usa-26-12945127-DNI/NCSC",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Program Manager",
+      "org": "Office of the Director of National Intelligence",
+      "posted": "2026-04-23",
+      "deadline": "2026-05-08",
+      "description": "Mandatory Requirements: Subject Matter Expertise: Expert knowledge and expertise in specialized subject matter areas, including understanding of how technology is used within the IC and in the national security interest. Expert knowledge of IC organizations, their roles, responsibilities, policy support mechanisms, and procedures. Counterintelligence & GEOINT Knowledge: Strong familiarity with cou",
+      "score": 21,
+      "matched_kws": [
+        "geospatial",
+        "machine learning",
+        "geoint",
+        "nga"
+      ],
+      "url": "https://www.usajobs.gov:443/job/866475700",
+      "salary": "$169279\u2013$197200",
+      "location": "Bethesda, Maryland",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-d623a19320",
       "type": "job",
       "source": "Watch List",
@@ -163,6 +185,28 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-20260156",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Imagery Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-01",
+      "deadline": "2026-05-16",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Mandatory Qualificat",
+      "score": 18,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial",
+        "imagery analyst"
+      ],
+      "url": "https://www.usajobs.gov:443/job/864862300",
+      "salary": "$85447\u2013$158322",
+      "location": "Springfield, Virginia",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "watch-8392c7c0c0",
@@ -539,6 +583,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-20260168",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "OPIR Operations Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-01",
+      "deadline": "2026-05-09",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Demonstrated ability",
+      "score": 15,
+      "matched_kws": [
+        "remote sensing",
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/867693400",
+      "salary": "$83265\u2013$154280",
+      "location": "Buckley AFB, Colorado",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-5cda84a4c6",
       "type": "job",
       "source": "Watch List",
@@ -737,6 +802,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-20260170",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Source Strategies Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-01",
+      "deadline": "2026-05-09",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience advising ",
+      "score": 13,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/867534800",
+      "salary": "$73939\u2013$154280",
+      "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-48b7d54e0c",
       "type": "job",
       "source": "Watch List",
@@ -779,6 +865,26 @@
       "remote": true,
       "job_type": "Defense / Aerospace",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-9X-DCIPS-12948462-266689-IR",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Department of the Air Force - Agency Wide",
+      "posted": "2026-04-29",
+      "deadline": "2026-05-12",
+      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
+      "score": 12,
+      "matched_kws": [
+        "space",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/867031500",
+      "salary": "$77460\u2013$100703",
+      "location": "Wright-Patterson AFB, Ohio",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "watch-3c8d3d84bd",
@@ -863,6 +969,98 @@
       "url": "https://www.usajobs.gov:443/job/867665400",
       "salary": "$106437\u2013$138370",
       "location": "Fort Gordon, Georgia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-DE-12948951-26-KEK",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
+      "org": "U.S. Marine Corps",
+      "posted": "2026-04-30",
+      "deadline": "2026-05-06",
+      "description": "Your resume must demonstrate at least one year of specialized experience at or equivalent to the GG/GS-13 grade level or pay band in the Federal service or equivalent experience in the private or public sector, such as: 1) Lead the integration of Artificial Intelligence and Machine Learning (AI/ML) systems into Processing, Exploitation, and Dissemination (PED) pipelines to automate change detectio",
+      "score": 8,
+      "matched_kws": [
+        "machine learning",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/867141300",
+      "salary": "$143913\u2013$187093",
+      "location": "Quantico, Virginia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260174",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "GEOINT Hybrid Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-01",
+      "deadline": "2026-05-16",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1) Create basic maps",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/867534900",
+      "salary": "$85447\u2013$158322",
+      "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260114",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Associate Director for Capabilities",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-04-08",
+      "deadline": "2026-05-08",
+      "description": "MANDATORY QUALIFICATION CRITERIA: Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Technical Qualification (TQs) and Education Requirements, if requi",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/864681300",
+      "salary": "$151661\u2013$228000",
+      "location": "Springfield, Virginia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-MCFU-26-12937609-MP",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Geographer",
+      "org": "United States Army Installation Management Command",
+      "posted": "2026-04-22",
+      "deadline": "2026-05-05",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 30 Percent or M",
+      "score": 0,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/866229300",
+      "salary": "$89508\u2013$116362",
+      "location": "Fort Hood, Texas",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-9X-DCIPS-12947882-266065-MA",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "ELECTRONICS ENGINEER",
+      "org": "National Air and Space Intelligence Center",
+      "posted": "2026-04-28",
+      "deadline": "2026-05-11",
+      "description": "This is a GG-13 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-13 duties for the \"Professional\" work category are at the \"Full Performance\" work level and are equivalent to those at the GS-13 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
+      "score": 0,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/866869400",
+      "salary": "$132751\u2013$172578",
+      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     }

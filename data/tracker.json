@@ -310,5 +310,85 @@
     "type": "job",
     "first_seen": "2026-05-05T17:56:14.590248",
     "updated": "2026-05-05T17:56:14.590251"
+  },
+  "usa-26-12945127-DNI/NCSC": {
+    "status": "seen",
+    "title": "Program Manager",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.006240",
+    "updated": "2026-05-05T17:56:57.006246"
+  },
+  "usa-20260156": {
+    "status": "seen",
+    "title": "Imagery Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.007076",
+    "updated": "2026-05-05T17:56:57.007080"
+  },
+  "usa-20260168": {
+    "status": "seen",
+    "title": "OPIR Operations Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.008997",
+    "updated": "2026-05-05T17:56:57.009000"
+  },
+  "usa-20260170": {
+    "status": "seen",
+    "title": "Source Strategies Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.010260",
+    "updated": "2026-05-05T17:56:57.010263"
+  },
+  "usa-9X-DCIPS-12948462-266689-IR": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.010915",
+    "updated": "2026-05-05T17:56:57.010918"
+  },
+  "usa-DE-12948951-26-KEK": {
+    "status": "seen",
+    "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.011765",
+    "updated": "2026-05-05T17:56:57.011769"
+  },
+  "usa-20260174": {
+    "status": "seen",
+    "title": "GEOINT Hybrid Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.012199",
+    "updated": "2026-05-05T17:56:57.012201"
+  },
+  "usa-20260114": {
+    "status": "seen",
+    "title": "Associate Director for Capabilities",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.012659",
+    "updated": "2026-05-05T17:56:57.012662"
+  },
+  "usa-MCFU-26-12937609-MP": {
+    "status": "seen",
+    "title": "Geographer",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.013153",
+    "updated": "2026-05-05T17:56:57.013156"
+  },
+  "usa-9X-DCIPS-12947882-266065-MA": {
+    "status": "seen",
+    "title": "ELECTRONICS ENGINEER",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:57.013632",
+    "updated": "2026-05-05T17:56:57.013635"
   }
 }
