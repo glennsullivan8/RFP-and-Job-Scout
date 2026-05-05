@@ -1,1 +1,314 @@
-{}
+{
+  "vt-rfp-finesst": {
+    "status": "seen",
+    "title": "NASA FINESST Fellowship \u2014 Earth & Space Science (via VT)",
+    "source": "NASA FINESST via Virginia Tech",
+    "type": "rfp",
+    "first_seen": "2026-05-05T17:56:14.577655",
+    "updated": "2026-05-05T17:56:14.577661"
+  },
+  "vt-rfp-vtrc": {
+    "status": "seen",
+    "title": "VT Transportation Research Council \u2014 Drone & GIS Contracts",
+    "source": "Virginia Tech \u2014 VTRC",
+    "type": "rfp",
+    "first_seen": "2026-05-05T17:56:14.577892",
+    "updated": "2026-05-05T17:56:14.577895"
+  },
+  "vt-rfp-research": {
+    "status": "seen",
+    "title": "VT Office of Research \u2014 Geospatial & Remote Sensing Subcontracts",
+    "source": "Virginia Tech \u2014 Research Office",
+    "type": "rfp",
+    "first_seen": "2026-05-05T17:56:14.578183",
+    "updated": "2026-05-05T17:56:14.578186"
+  },
+  "vt-rfp-ipg": {
+    "status": "seen",
+    "title": "VT Institute for Policy & Governance \u2014 Geospatial Research Contracts",
+    "source": "Virginia Tech \u2014 VTIPG",
+    "type": "rfp",
+    "first_seen": "2026-05-05T17:56:14.578448",
+    "updated": "2026-05-05T17:56:14.578451"
+  },
+  "watch-d623a19320": {
+    "status": "seen",
+    "title": "Check for openings: The Galileo Project (Harvard)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.578676",
+    "updated": "2026-05-05T17:56:14.578678"
+  },
+  "watch-9f3e4ef545": {
+    "status": "seen",
+    "title": "Check for openings: NASA JPL \u2014 Opportunities",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.578935",
+    "updated": "2026-05-05T17:56:14.578938"
+  },
+  "watch-52f4b65a7e": {
+    "status": "seen",
+    "title": "Check for openings: Harvard University \u2014 Center for Geographic Analysis / Galile",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.579161",
+    "updated": "2026-05-05T17:56:14.579164"
+  },
+  "watch-8392c7c0c0": {
+    "status": "seen",
+    "title": "Check for openings: NASA FINESST Fellowship",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.579416",
+    "updated": "2026-05-05T17:56:14.579420"
+  },
+  "watch-97e83d05d0": {
+    "status": "seen",
+    "title": "Check for openings: Stanford University \u2014 Earth System Science / Remote Sensing",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.579656",
+    "updated": "2026-05-05T17:56:14.579659"
+  },
+  "watch-7259f7d6a4": {
+    "status": "seen",
+    "title": "Check for openings: MIT \u2014 Earth, Atmospheric & Planetary Sciences / CSAIL",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.579898",
+    "updated": "2026-05-05T17:56:14.579901"
+  },
+  "watch-1845aead04": {
+    "status": "seen",
+    "title": "Check for openings: Virginia Tech \u2014 Graduate Admissions (PhD)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.580368",
+    "updated": "2026-05-05T17:56:14.580370"
+  },
+  "watch-839b325341": {
+    "status": "seen",
+    "title": "Check for openings: University of Michigan \u2014 Remote Sensing & GIS Research",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.580625",
+    "updated": "2026-05-05T17:56:14.580628"
+  },
+  "watch-fb6043a268": {
+    "status": "seen",
+    "title": "Check for openings: UC Berkeley \u2014 ESPM / Geography / Berkeley Seismological Lab",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.580884",
+    "updated": "2026-05-05T17:56:14.580888"
+  },
+  "watch-33068060e0": {
+    "status": "seen",
+    "title": "Check for openings: University of Colorado Boulder \u2014 CIRES / LASP",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.581197",
+    "updated": "2026-05-05T17:56:14.581201"
+  },
+  "watch-0f0879edbf": {
+    "status": "seen",
+    "title": "Check for openings: Penn State \u2014 Geography / Earth & Environmental Systems",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.581477",
+    "updated": "2026-05-05T17:56:14.581480"
+  },
+  "watch-9ce28f776f": {
+    "status": "seen",
+    "title": "Check for openings: USC \u2014 Spatial Sciences Institute / Viterbi School",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.581780",
+    "updated": "2026-05-05T17:56:14.581783"
+  },
+  "watch-84f9e02e82": {
+    "status": "seen",
+    "title": "Check for openings: University of Maryland \u2014 ESSIC / GEOG Dept",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.582065",
+    "updated": "2026-05-05T17:56:14.582068"
+  },
+  "watch-bf0b563c17": {
+    "status": "seen",
+    "title": "Check for openings: SETI Institute",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.582405",
+    "updated": "2026-05-05T17:56:14.582408"
+  },
+  "watch-f16d15ea0f": {
+    "status": "seen",
+    "title": "Check for openings: Virginia Tech \u2014 Faculty & Research Positions",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.582687",
+    "updated": "2026-05-05T17:56:14.582689"
+  },
+  "watch-1bce70a99c": {
+    "status": "seen",
+    "title": "Check for openings: U of Michigan \u2014 SNRE / SEAS Research Positions",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.583014",
+    "updated": "2026-05-05T17:56:14.583018"
+  },
+  "watch-184ecceae5": {
+    "status": "seen",
+    "title": "Check for openings: Colorado State University \u2014 CIRA / Atmospheric Science",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.583298",
+    "updated": "2026-05-05T17:56:14.583301"
+  },
+  "watch-14cc3d575a": {
+    "status": "seen",
+    "title": "Check for openings: George Mason University \u2014 Geography & GeoInfo Science",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.583626",
+    "updated": "2026-05-05T17:56:14.583629"
+  },
+  "watch-8e8b565589": {
+    "status": "seen",
+    "title": "Check for openings: University of Arizona \u2014 Lunar & Planetary Lab / Steward Obse",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.583942",
+    "updated": "2026-05-05T17:56:14.583945"
+  },
+  "watch-be6e473370": {
+    "status": "seen",
+    "title": "Check for openings: University of Wisconsin-Madison \u2014 SSEC / Nelson Institute",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.584267",
+    "updated": "2026-05-05T17:56:14.584269"
+  },
+  "watch-5cda84a4c6": {
+    "status": "seen",
+    "title": "Check for openings: Maxar Technologies",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.584607",
+    "updated": "2026-05-05T17:56:14.584610"
+  },
+  "watch-d858990622": {
+    "status": "seen",
+    "title": "Check for openings: Ohio State University \u2014 Byrd Polar & Climate Research / Geog",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.584939",
+    "updated": "2026-05-05T17:56:14.584942"
+  },
+  "watch-7a3c6a5895": {
+    "status": "seen",
+    "title": "Check for openings: Texas A&M \u2014 TAMU Geography / Remote Sensing Center",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.585483",
+    "updated": "2026-05-05T17:56:14.585486"
+  },
+  "watch-8a362a7b27": {
+    "status": "seen",
+    "title": "Check for openings: AAG Career Center (American Assoc of Geographers)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.585840",
+    "updated": "2026-05-05T17:56:14.585844"
+  },
+  "watch-b3cda3888a": {
+    "status": "seen",
+    "title": "Check for openings: AGU Career Center (American Geophysical Union)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.586189",
+    "updated": "2026-05-05T17:56:14.586192"
+  },
+  "watch-b7e9e4de40": {
+    "status": "seen",
+    "title": "Check for openings: Sol Foundation",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.586576",
+    "updated": "2026-05-05T17:56:14.586578"
+  },
+  "watch-ed94a6a568": {
+    "status": "seen",
+    "title": "Check for openings: Planet Labs",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.586941",
+    "updated": "2026-05-05T17:56:14.586943"
+  },
+  "watch-ccfc036880": {
+    "status": "seen",
+    "title": "Check for openings: Esri",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.587321",
+    "updated": "2026-05-05T17:56:14.587324"
+  },
+  "watch-f4b5e514c4": {
+    "status": "seen",
+    "title": "Check for openings: USGIF Job Board (Geospatial Intelligence Foundation)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.587723",
+    "updated": "2026-05-05T17:56:14.587727"
+  },
+  "watch-48b7d54e0c": {
+    "status": "seen",
+    "title": "Check for openings: Lockheed Martin",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.588117",
+    "updated": "2026-05-05T17:56:14.588123"
+  },
+  "watch-a9b2452133": {
+    "status": "seen",
+    "title": "Check for openings: Raytheon Technologies (RTX)",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.588641",
+    "updated": "2026-05-05T17:56:14.588645"
+  },
+  "watch-3c8d3d84bd": {
+    "status": "seen",
+    "title": "Check for openings: Radiance Technologies",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.589014",
+    "updated": "2026-05-05T17:56:14.589016"
+  },
+  "watch-8d25db8869": {
+    "status": "seen",
+    "title": "Check for openings: Boeing",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.589459",
+    "updated": "2026-05-05T17:56:14.589462"
+  },
+  "watch-9cf5b4abcf": {
+    "status": "seen",
+    "title": "Check for openings: Bigelow Aerospace",
+    "source": "Watch List",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.589837",
+    "updated": "2026-05-05T17:56:14.589840"
+  },
+  "usa-DAST-26-12951672-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (Operations)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-05T17:56:14.590248",
+    "updated": "2026-05-05T17:56:14.590251"
+  }
+}
