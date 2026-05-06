@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-05T17:56:57.014215",
+  "generated": "2026-05-06T12:26:50.495141",
   "rfp_count": 4,
-  "job_count": 45,
+  "job_count": 44,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -1027,23 +1027,6 @@
       "url": "https://www.usajobs.gov:443/job/864681300",
       "salary": "$151661\u2013$228000",
       "location": "Springfield, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-MCFU-26-12937609-MP",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Geographer",
-      "org": "United States Army Installation Management Command",
-      "posted": "2026-04-22",
-      "deadline": "2026-05-05",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 30 Percent or M",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/866229300",
-      "salary": "$89508\u2013$116362",
-      "location": "Fort Hood, Texas",
       "remote": false,
       "job_type": "Federal"
     },
