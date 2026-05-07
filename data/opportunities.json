@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-06T12:26:50.495141",
+  "generated": "2026-05-07T12:27:53.465374",
   "rfp_count": 4,
-  "job_count": 44,
+  "job_count": 45,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,6 +98,31 @@
     }
   ],
   "jobs": [
+    {
+      "id": "usa-RP-26-RMW-12950715-101",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Cartographer GIS Specialist",
+      "org": "National Cemetery Administration",
+      "posted": "2026-05-06",
+      "deadline": "2026-05-15",
+      "description": "To qualify for this position, applicants must meet all specialized experience and time in grade requirements within 45 days of the closing date of this announcement, 05/15/2026. Time-In-Grade Requirement: Applicants who are current Federal employees and have held a GS grade any time in the past 52 weeks must also meet time-in-grade requirements within 45 days of the closing date of this announceme",
+      "score": 30,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "gis",
+        "geospatial",
+        "arcgis",
+        "python",
+        "astronomy"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868194400",
+      "salary": "$78972\u2013$123052",
+      "location": "Decatur, Georgia",
+      "remote": false,
+      "job_type": "Federal"
+    },
     {
       "id": "usa-26-12945127-DNI/NCSC",
       "type": "job",
@@ -867,26 +892,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-9X-DCIPS-12948462-266689-IR",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force - Agency Wide",
-      "posted": "2026-04-29",
-      "deadline": "2026-05-12",
-      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
-      "score": 12,
-      "matched_kws": [
-        "space",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/867031500",
-      "salary": "$77460\u2013$100703",
-      "location": "Wright-Patterson AFB, Ohio",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-3c8d3d84bd",
       "type": "job",
       "source": "Watch List",
@@ -973,22 +978,22 @@
       "job_type": "Federal"
     },
     {
-      "id": "usa-DE-12948951-26-KEK",
+      "id": "usa-ST-12953915-26-KEK",
       "type": "job",
       "source": "USAJobs",
-      "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
-      "org": "U.S. Marine Corps",
-      "posted": "2026-04-30",
-      "deadline": "2026-05-06",
-      "description": "Your resume must demonstrate at least one year of specialized experience at or equivalent to the GG/GS-13 grade level or pay band in the Federal service or equivalent experience in the private or public sector, such as: 1) Lead the integration of Artificial Intelligence and Machine Learning (AI/ML) systems into Processing, Exploitation, and Dissemination (PED) pipelines to automate change detectio",
-      "score": 8,
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Naval Intelligence Activity",
+      "posted": "2026-05-07",
+      "deadline": "2026-05-13",
+      "description": "Your resume must demonstrate at least one year of specialized experience equivalent to the next lower grade level (GG/GS-07) or pay band in the federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following such as: 1) Extract information from emerging, new, and future Geospatial-Intelligence (GEOINT) phenomenology; 2) Report require",
+      "score": 9,
       "matched_kws": [
-        "machine learning",
+        "geospatial",
         "geoint"
       ],
-      "url": "https://www.usajobs.gov:443/job/867141300",
-      "salary": "$143913\u2013$187093",
-      "location": "Quantico, Virginia",
+      "url": "https://www.usajobs.gov:443/job/868062000",
+      "salary": "$64021\u2013$83232",
+      "location": "Dayton, Ohio",
       "remote": false,
       "job_type": "Federal"
     },
@@ -1008,6 +1013,25 @@
       "url": "https://www.usajobs.gov:443/job/867534900",
       "salary": "$85447\u2013$158322",
       "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260155",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Senior GEOINT Authority for Geomatics",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-07",
+      "deadline": "2026-05-22",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Eligibility for this",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868246300",
+      "salary": "$151661\u2013$219000",
+      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     },

@@ -390,5 +390,29 @@
     "type": "job",
     "first_seen": "2026-05-05T17:56:57.013632",
     "updated": "2026-05-05T17:56:57.013635"
+  },
+  "usa-RP-26-RMW-12950715-101": {
+    "status": "seen",
+    "title": "Cartographer GIS Specialist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-07T12:27:53.461357",
+    "updated": "2026-05-07T12:27:53.461366"
+  },
+  "usa-ST-12953915-26-KEK": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-07T12:27:53.464324",
+    "updated": "2026-05-07T12:27:53.464327"
+  },
+  "usa-20260155": {
+    "status": "seen",
+    "title": "Senior GEOINT Authority for Geomatics",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-07T12:27:53.464753",
+    "updated": "2026-05-07T12:27:53.464756"
   }
 }
