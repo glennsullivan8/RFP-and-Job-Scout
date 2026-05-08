@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-07T12:27:53.465374",
+  "generated": "2026-05-08T12:07:13.940514",
   "rfp_count": 4,
-  "job_count": 45,
+  "job_count": 46,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -978,6 +978,26 @@
       "job_type": "Federal"
     },
     {
+      "id": "usa-20260178",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Senior GEOINT Authority for Aeronautical Navigation",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-07",
+      "deadline": "2026-05-22",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Eligibility for this",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868471700",
+      "salary": "$151661\u2013$209600",
+      "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "usa-ST-12953915-26-KEK",
       "type": "job",
       "source": "USAJobs",
@@ -1042,7 +1062,7 @@
       "title": "Associate Director for Capabilities",
       "org": "National Geospatial-Intelligence Agency",
       "posted": "2026-04-08",
-      "deadline": "2026-05-08",
+      "deadline": "2026-05-15",
       "description": "MANDATORY QUALIFICATION CRITERIA: Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Technical Qualification (TQs) and Education Requirements, if requi",
       "score": 5,
       "matched_kws": [
