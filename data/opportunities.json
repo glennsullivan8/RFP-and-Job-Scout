@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-08T12:07:13.940514",
+  "generated": "2026-05-11T13:46:47.423141",
   "rfp_count": 4,
-  "job_count": 46,
+  "job_count": 42,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -120,28 +120,6 @@
       "url": "https://www.usajobs.gov:443/job/868194400",
       "salary": "$78972\u2013$123052",
       "location": "Decatur, Georgia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-26-12945127-DNI/NCSC",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Program Manager",
-      "org": "Office of the Director of National Intelligence",
-      "posted": "2026-04-23",
-      "deadline": "2026-05-08",
-      "description": "Mandatory Requirements: Subject Matter Expertise: Expert knowledge and expertise in specialized subject matter areas, including understanding of how technology is used within the IC and in the national security interest. Expert knowledge of IC organizations, their roles, responsibilities, policy support mechanisms, and procedures. Counterintelligence & GEOINT Knowledge: Strong familiarity with cou",
-      "score": 21,
-      "matched_kws": [
-        "geospatial",
-        "machine learning",
-        "geoint",
-        "nga"
-      ],
-      "url": "https://www.usajobs.gov:443/job/866475700",
-      "salary": "$169279\u2013$197200",
-      "location": "Bethesda, Maryland",
       "remote": false,
       "job_type": "Federal"
     },
@@ -608,27 +586,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-20260168",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "OPIR Operations Analyst",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-01",
-      "deadline": "2026-05-09",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Demonstrated ability",
-      "score": 15,
-      "matched_kws": [
-        "remote sensing",
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/867693400",
-      "salary": "$83265\u2013$154280",
-      "location": "Buckley AFB, Colorado",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-5cda84a4c6",
       "type": "job",
       "source": "Watch List",
@@ -827,23 +784,23 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-20260170",
+      "id": "usa-20260103",
       "type": "job",
       "source": "USAJobs",
-      "title": "Source Strategies Analyst",
+      "title": "Geodetic Orbit Scientist",
       "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-01",
-      "deadline": "2026-05-09",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience advising ",
+      "posted": "2026-05-11",
+      "deadline": "2026-06-06",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience with s",
       "score": 13,
       "matched_kws": [
-        "gis",
-        "geospatial",
-        "geoint"
+        "remote sensing",
+        "python",
+        "astronomy"
       ],
-      "url": "https://www.usajobs.gov:443/job/867534800",
-      "salary": "$73939\u2013$154280",
-      "location": "Multiple Locations",
+      "url": "https://www.usajobs.gov:443/job/865960400",
+      "salary": "$51740\u2013$90597",
+      "location": "Saint Louis, Missouri",
       "remote": false,
       "job_type": "Federal"
     },
@@ -958,26 +915,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-DAST-26-12951672-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-05-04",
-      "deadline": "2026-05-08",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. Current Army De",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/867665400",
-      "salary": "$106437\u2013$138370",
-      "location": "Fort Gordon, Georgia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "usa-20260178",
       "type": "job",
       "source": "USAJobs",
@@ -1051,25 +988,6 @@
       ],
       "url": "https://www.usajobs.gov:443/job/868246300",
       "salary": "$151661\u2013$219000",
-      "location": "Springfield, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-20260114",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Associate Director for Capabilities",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-04-08",
-      "deadline": "2026-05-15",
-      "description": "MANDATORY QUALIFICATION CRITERIA: Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Technical Qualification (TQs) and Education Requirements, if requi",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/864681300",
-      "salary": "$151661\u2013$228000",
       "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"

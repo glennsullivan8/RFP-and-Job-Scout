@@ -422,5 +422,13 @@
     "type": "job",
     "first_seen": "2026-05-08T12:07:13.939316",
     "updated": "2026-05-08T12:07:13.939325"
+  },
+  "usa-20260103": {
+    "status": "seen",
+    "title": "Geodetic Orbit Scientist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-11T13:46:47.421543",
+    "updated": "2026-05-11T13:46:47.421552"
   }
 }
