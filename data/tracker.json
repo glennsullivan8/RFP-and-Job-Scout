@@ -430,5 +430,13 @@
     "type": "job",
     "first_seen": "2026-05-11T13:46:47.421543",
     "updated": "2026-05-11T13:46:47.421552"
+  },
+  "usa-DAST-26-12952254-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (Operations)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-12T13:03:46.482763",
+    "updated": "2026-05-12T13:03:46.482768"
   }
 }

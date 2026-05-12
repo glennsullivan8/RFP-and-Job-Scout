@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11T13:46:47.423141",
+  "generated": "2026-05-12T13:03:46.483850",
   "rfp_count": 4,
   "job_count": 42,
   "rfps": [
@@ -915,6 +915,26 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-DAST-26-12952254-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (Operations)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-05-12",
+      "deadline": "2026-05-18",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. Current Army De",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868833900",
+      "salary": "$61722\u2013$80243",
+      "location": "Fort Gordon, Georgia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "usa-20260178",
       "type": "job",
       "source": "USAJobs",
@@ -989,23 +1009,6 @@
       "url": "https://www.usajobs.gov:443/job/868246300",
       "salary": "$151661\u2013$219000",
       "location": "Springfield, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-9X-DCIPS-12947882-266065-MA",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "ELECTRONICS ENGINEER",
-      "org": "National Air and Space Intelligence Center",
-      "posted": "2026-04-28",
-      "deadline": "2026-05-11",
-      "description": "This is a GG-13 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-13 duties for the \"Professional\" work category are at the \"Full Performance\" work level and are equivalent to those at the GS-13 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/866869400",
-      "salary": "$132751\u2013$172578",
-      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     }
