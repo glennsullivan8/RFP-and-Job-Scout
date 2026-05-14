@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-13T13:09:22.756256",
+  "generated": "2026-05-14T12:24:11.944038",
   "rfp_count": 4,
   "job_count": 42,
   "rfps": [
@@ -849,6 +849,26 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-5R-DCIPS-12957851-266567-SC",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Department of the Air Force - Agency Wide",
+      "posted": "2026-05-13",
+      "deadline": "2026-05-26",
+      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
+      "score": 12,
+      "matched_kws": [
+        "space",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868524400",
+      "salary": "$75233\u2013$97809",
+      "location": "Patrick AFB, Florida",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-3c8d3d84bd",
       "type": "job",
       "source": "Watch List",
@@ -951,26 +971,6 @@
       "url": "https://www.usajobs.gov:443/job/868471700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-ST-12953915-26-KEK",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Naval Intelligence Activity",
-      "posted": "2026-05-07",
-      "deadline": "2026-05-13",
-      "description": "Your resume must demonstrate at least one year of specialized experience equivalent to the next lower grade level (GG/GS-07) or pay band in the federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following such as: 1) Extract information from emerging, new, and future Geospatial-Intelligence (GEOINT) phenomenology; 2) Report require",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/868062000",
-      "salary": "$64021\u2013$83232",
-      "location": "Dayton, Ohio",
       "remote": false,
       "job_type": "Federal"
     },
