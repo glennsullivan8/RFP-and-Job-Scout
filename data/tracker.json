@@ -446,5 +446,37 @@
     "type": "job",
     "first_seen": "2026-05-14T12:24:11.942610",
     "updated": "2026-05-14T12:24:11.942619"
+  },
+  "usa-20260186": {
+    "status": "seen",
+    "title": "Photogrammetrist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-18T14:28:48.582083",
+    "updated": "2026-05-18T14:28:48.582091"
+  },
+  "usa-20260183": {
+    "status": "seen",
+    "title": "Imagery Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-18T14:28:48.583017",
+    "updated": "2026-05-18T14:28:48.583020"
+  },
+  "usa-9N-DCIPS-12961843-265993-JB": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-18T14:28:48.586588",
+    "updated": "2026-05-18T14:28:48.586591"
+  },
+  "usa-26-12965029-DNI/MI/NIC": {
+    "status": "seen",
+    "title": "Senior GEOINT Functional Advisor",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-18T14:28:48.587210",
+    "updated": "2026-05-18T14:28:48.587213"
   }
 }
