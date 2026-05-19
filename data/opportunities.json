@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-18T14:28:48.587807",
+  "generated": "2026-05-19T13:54:34.240635",
   "rfp_count": 4,
   "job_count": 42,
   "rfps": [
@@ -120,6 +120,29 @@
       "url": "https://www.usajobs.gov:443/job/869656000",
       "salary": "$51740\u2013$90597",
       "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260189",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "EO/IR Modeling Scientist",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-18",
+      "deadline": "2026-05-30",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience coordi",
+      "score": 23,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "geospatial",
+        "machine learning",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/869827400",
+      "salary": "$109308\u2013$169604",
+      "location": "Multiple Locations",
       "remote": false,
       "job_type": "Federal"
     },
@@ -913,26 +936,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-DAST-26-12952254-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-05-12",
-      "deadline": "2026-05-18",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. Current Army De",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/868833900",
-      "salary": "$61722\u2013$80243",
-      "location": "Fort Gordon, Georgia",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-20260178",

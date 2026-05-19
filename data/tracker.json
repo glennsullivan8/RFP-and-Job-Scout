@@ -478,5 +478,13 @@
     "type": "job",
     "first_seen": "2026-05-18T14:28:48.587210",
     "updated": "2026-05-18T14:28:48.587213"
+  },
+  "usa-20260189": {
+    "status": "seen",
+    "title": "EO/IR Modeling Scientist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-19T13:54:34.236073",
+    "updated": "2026-05-19T13:54:34.236094"
   }
 }
