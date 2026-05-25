@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-22T13:29:42.122785",
+  "generated": "2026-05-25T13:58:19.967459",
   "rfp_count": 4,
   "job_count": 42,
   "rfps": [
@@ -872,6 +872,26 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-5R-DCIPS-12957851-266567-SC",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Department of the Air Force - Agency Wide",
+      "posted": "2026-05-13",
+      "deadline": "2026-05-26",
+      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
+      "score": 12,
+      "matched_kws": [
+        "space",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868524400",
+      "salary": "$75233\u2013$97809",
+      "location": "Patrick AFB, Florida",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-3c8d3d84bd",
       "type": "job",
       "source": "Watch List",
@@ -954,25 +974,6 @@
       "url": "https://www.usajobs.gov:443/job/868471700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-9N-DCIPS-12961843-265993-JB",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force - Agency Wide",
-      "posted": "2026-05-18",
-      "deadline": "2026-05-22",
-      "description": "This is a GG-13 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-13 duties for the \"Professional\" work category are at the \"Full Performance\" work level and are equivalent to those at the GS-13 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/869552500",
-      "salary": "$121785\u2013$158322",
-      "location": "Ramstein, Germany",
       "remote": false,
       "job_type": "Federal"
     },
