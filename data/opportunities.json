@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-26T13:52:48.465106",
+  "generated": "2026-05-27T14:25:21.861979",
   "rfp_count": 4,
-  "job_count": 42,
+  "job_count": 41,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -870,26 +870,6 @@
       "remote": true,
       "job_type": "Defense / Aerospace",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-5R-DCIPS-12957851-266567-SC",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force - Agency Wide",
-      "posted": "2026-05-13",
-      "deadline": "2026-05-26",
-      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
-      "score": 12,
-      "matched_kws": [
-        "space",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/868524400",
-      "salary": "$75233\u2013$97809",
-      "location": "Patrick AFB, Florida",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-3c8d3d84bd",
