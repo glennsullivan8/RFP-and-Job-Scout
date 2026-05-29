@@ -1,7 +1,7 @@
 {
-  "generated": "2026-05-28T14:36:52.359735",
+  "generated": "2026-05-29T13:58:40.350544",
   "rfp_count": 4,
-  "job_count": 41,
+  "job_count": 42,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -992,6 +992,25 @@
       "url": "https://www.usajobs.gov:443/job/869663500",
       "salary": "$143913\u2013$197200",
       "location": "McLean, Virginia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260193",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Program Director, Collection Services & Data Services Program Management Offices",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-28",
+      "deadline": "2026-06-21",
+      "description": "Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Executive Competencies, Technical Competencies, Technical Qualifications, and Education Requirements",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/870988700",
+      "salary": "$151661\u2013$209600",
+      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     }

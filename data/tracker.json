@@ -486,5 +486,13 @@
     "type": "job",
     "first_seen": "2026-05-19T13:54:34.236073",
     "updated": "2026-05-19T13:54:34.236094"
+  },
+  "usa-20260193": {
+    "status": "seen",
+    "title": "Program Director, Collection Services & Data Services Program Management Offices",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-05-29T13:58:40.349885",
+    "updated": "2026-05-29T13:58:40.349892"
   }
 }
