@@ -494,5 +494,13 @@
     "type": "job",
     "first_seen": "2026-05-29T13:58:40.349885",
     "updated": "2026-05-29T13:58:40.349892"
+  },
+  "usa-8X-DCIPS-12974157-307504-SG": {
+    "status": "seen",
+    "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-01T16:35:38.363486",
+    "updated": "2026-06-01T16:35:38.363493"
   }
 }
