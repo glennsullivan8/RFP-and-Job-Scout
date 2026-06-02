@@ -502,5 +502,13 @@
     "type": "job",
     "first_seen": "2026-06-01T16:35:38.363486",
     "updated": "2026-06-01T16:35:38.363493"
+  },
+  "usa-DE-26-12973052-CAWV-JM": {
+    "status": "seen",
+    "title": "Geographic Information System Specialist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-02T14:50:33.269689",
+    "updated": "2026-06-02T14:50:33.269696"
   }
 }

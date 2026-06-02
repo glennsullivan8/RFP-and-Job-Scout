@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-01T16:35:38.364234",
+  "generated": "2026-06-02T14:50:33.274208",
   "rfp_count": 4,
-  "job_count": 41,
+  "job_count": 43,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -231,6 +231,27 @@
       "url": "https://www.usajobs.gov:443/job/869655700",
       "salary": "$77192\u2013$144457",
       "location": "Pearl Harbor, Hawaii",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-DE-26-12973052-CAWV-JM",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Geographic Information System Specialist",
+      "org": "Interior, Bureau of Indian Affairs",
+      "posted": "2026-06-01",
+      "deadline": "2026-06-15",
+      "description": "EXPERIENCE AND EDUCATION REQUIREMENTS: (OPM Operating Manual, Qualification Standards) GS-07: To qualify at the GS-07 level, you must have: A). At least 1 year of specialized experience that equips you with the particular knowledge, skills and abilities to successfully perform the duties of this position. This experience is related to the work of the position and equivalent to at least the GS-05 g",
+      "score": 18,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial"
+      ],
+      "url": "https://www.usajobs.gov:443/job/871273400",
+      "salary": "$50460\u2013$129742",
+      "location": "Multiple Locations",
       "remote": false,
       "job_type": "Federal"
     },
@@ -936,6 +957,26 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-20260178",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Senior GEOINT Authority for Aeronautical Navigation ***EXTENDED***",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-05-07",
+      "deadline": "2026-06-08",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Eligibility for this",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/868471700",
+      "salary": "$151661\u2013$209600",
+      "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "usa-26-12965029-DNI/MI/NIC",
