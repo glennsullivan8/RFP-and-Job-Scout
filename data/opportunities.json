@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-02T14:50:33.274208",
+  "generated": "2026-06-03T15:27:00.960104",
   "rfp_count": 4,
-  "job_count": 43,
+  "job_count": 42,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -141,7 +141,7 @@
         "geoint"
       ],
       "url": "https://www.usajobs.gov:443/job/869827400",
-      "salary": "$109308\u2013$169604",
+      "salary": "$109304\u2013$187093",
       "location": "Multiple Locations",
       "remote": false,
       "job_type": "Federal"
@@ -975,25 +975,6 @@
       "url": "https://www.usajobs.gov:443/job/868471700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-26-12965029-DNI/MI/NIC",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Senior GEOINT Functional Advisor",
-      "org": "Office of the Director of National Intelligence",
-      "posted": "2026-05-18",
-      "deadline": "2026-06-02",
-      "description": "Expert knowledge and experience with the breadth of GEOINT collection, GEOINT planning processes, critical analysis, and consensus building, as well as an understanding of how GEOINT integrates with other intelligence disciplines. Superior ability to communicate clearly, both orally and in written reports, and to logically analyze, synthesize, and evaluate multiple sources of information for their",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/869663500",
-      "salary": "$143913\u2013$197200",
-      "location": "McLean, Virginia",
       "remote": false,
       "job_type": "Federal"
     },
