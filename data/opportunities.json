@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-05T13:50:45.925709",
+  "generated": "2026-06-08T14:46:25.480720",
   "rfp_count": 4,
-  "job_count": 42,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,54 +98,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "usa-20260186",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Photogrammetrist ***EXTENDED***",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-18",
-      "deadline": "2026-06-06",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience commun",
-      "score": 32,
-      "matched_kws": [
-        "remote sensing",
-        "photogrammetry",
-        "gis",
-        "geospatial",
-        "arcgis",
-        "astronomy",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/869656000",
-      "salary": "$51740\u2013$90597",
-      "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-20260189",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "EO/IR Modeling Scientist",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-18",
-      "deadline": "2026-06-06",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience coordi",
-      "score": 23,
-      "matched_kws": [
-        "remote sensing",
-        "photogrammetry",
-        "geospatial",
-        "machine learning",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/869827400",
-      "salary": "$109304\u2013$187093",
-      "location": "Multiple Locations",
-      "remote": false,
-      "job_type": "Federal"
-    },
     {
       "id": "watch-d623a19320",
       "type": "job",
@@ -828,27 +780,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-20260103",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Geodetic Orbit Scientist",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-11",
-      "deadline": "2026-06-06",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience with s",
-      "score": 13,
-      "matched_kws": [
-        "remote sensing",
-        "python",
-        "astronomy"
-      ],
-      "url": "https://www.usajobs.gov:443/job/865960400",
-      "salary": "$51740\u2013$90597",
-      "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-48b7d54e0c",
       "type": "job",
       "source": "Watch List",
@@ -957,26 +888,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-20260178",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Senior GEOINT Authority for Aeronautical Navigation ***EXTENDED***",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-07",
-      "deadline": "2026-06-08",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Eligibility for this",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/868471700",
-      "salary": "$151661\u2013$209600",
-      "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-20260193",
