@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-12T14:08:48.421532",
+  "generated": "2026-06-15T16:15:57.322400",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -163,28 +163,6 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-20260183",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Imagery Analyst",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-18",
-      "deadline": "2026-06-13",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Experience with r",
-      "score": 18,
-      "matched_kws": [
-        "remote sensing",
-        "gis",
-        "geospatial",
-        "imagery analyst"
-      ],
-      "url": "https://www.usajobs.gov:443/job/869655700",
-      "salary": "$77192\u2013$144457",
-      "location": "Pearl Harbor, Hawaii",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-DE-26-12973052-CAWV-JM",
@@ -890,6 +868,26 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-20260192",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Imagery Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-06-03",
+      "deadline": "2026-06-20",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1.Experience using i",
+      "score": 10,
+      "matched_kws": [
+        "remote sensing",
+        "imagery analyst"
+      ],
+      "url": "https://www.usajobs.gov:443/job/871673900",
+      "salary": "$75425\u2013$139753",
+      "location": "Omaha, Nebraska",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "usa-20260193",
       "type": "job",
       "source": "USAJobs",
@@ -905,23 +903,6 @@
       "url": "https://www.usajobs.gov:443/job/870988700",
       "salary": "$151661\u2013$209600",
       "location": "Springfield, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-8X-DCIPS-12974157-307504-SG",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force - Agency Wide",
-      "posted": "2026-06-01",
-      "deadline": "2026-06-12",
-      "description": "This is a GG-15 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-15 duties for the \"Supervision/Management\" work category are at the \"Expert\" work level and are equivalent to those at the GS-15 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/871135600",
-      "salary": "$150119\u2013$195157",
-      "location": "Kelly AFB, Texas",
       "remote": false,
       "job_type": "Federal"
     }

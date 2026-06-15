@@ -510,5 +510,13 @@
     "type": "job",
     "first_seen": "2026-06-02T14:50:33.269689",
     "updated": "2026-06-02T14:50:33.269696"
+  },
+  "usa-20260192": {
+    "status": "seen",
+    "title": "Imagery Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-15T16:15:57.321528",
+    "updated": "2026-06-15T16:15:57.321537"
   }
 }
