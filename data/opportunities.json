@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-15T16:15:57.322400",
+  "generated": "2026-06-16T15:51:25.523681",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 36,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -163,27 +163,6 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-DE-26-12973052-CAWV-JM",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Geographic Information System Specialist",
-      "org": "Interior, Bureau of Indian Affairs",
-      "posted": "2026-06-01",
-      "deadline": "2026-06-15",
-      "description": "EXPERIENCE AND EDUCATION REQUIREMENTS: (OPM Operating Manual, Qualification Standards) GS-07: To qualify at the GS-07 level, you must have: A). At least 1 year of specialized experience that equips you with the particular knowledge, skills and abilities to successfully perform the duties of this position. This experience is related to the work of the position and equivalent to at least the GS-05 g",
-      "score": 18,
-      "matched_kws": [
-        "remote sensing",
-        "gis",
-        "geospatial"
-      ],
-      "url": "https://www.usajobs.gov:443/job/871273400",
-      "salary": "$50460\u2013$129742",
-      "location": "Multiple Locations",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-8392c7c0c0",
