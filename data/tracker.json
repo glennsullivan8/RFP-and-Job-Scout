@@ -518,5 +518,21 @@
     "type": "job",
     "first_seen": "2026-06-15T16:15:57.321528",
     "updated": "2026-06-15T16:15:57.321537"
+  },
+  "usa-DE-12988165-26-ARB": {
+    "status": "seen",
+    "title": "TOMAHAWK CRUISE MISSILE PLANNING ANALYST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-22T15:49:35.349852",
+    "updated": "2026-06-22T15:49:35.349860"
+  },
+  "usa-8X-DCIPS-12990448-362644-JB": {
+    "status": "seen",
+    "title": "PROGRAM ANALYST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-22T15:49:35.350515",
+    "updated": "2026-06-22T15:49:35.350518"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-19T14:12:30.462774",
+  "generated": "2026-06-22T15:49:35.353612",
   "rfp_count": 4,
   "job_count": 36,
   "rfps": [
@@ -847,41 +847,39 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-20260192",
+      "id": "usa-DE-12988165-26-ARB",
       "type": "job",
       "source": "USAJobs",
-      "title": "Imagery Analyst",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-06-03",
-      "deadline": "2026-06-20",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1.Experience using i",
-      "score": 10,
+      "title": "TOMAHAWK CRUISE MISSILE PLANNING ANALYST",
+      "org": "United States Fleet Forces Command",
+      "posted": "2026-06-22",
+      "deadline": "2026-07-01",
+      "description": "GS-13 Your resume must also demonstrate at least one year of specialized experience at or equivalent to the GS-12 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: Experience performing a wide range of concepts, principles, and practices pertaining to Tomahawk Land to Air Missile (TLAM) an",
+      "score": 9,
       "matched_kws": [
-        "remote sensing",
-        "imagery analyst"
+        "geospatial",
+        "geoint"
       ],
-      "url": "https://www.usajobs.gov:443/job/871673900",
-      "salary": "$75425\u2013$139753",
-      "location": "Omaha, Nebraska",
+      "url": "https://www.usajobs.gov:443/job/873700200",
+      "salary": "$108019\u2013$140426",
+      "location": "Naval Base, Norfolk, Virginia",
       "remote": false,
       "job_type": "Federal"
     },
     {
-      "id": "usa-20260193",
+      "id": "usa-8X-DCIPS-12990448-362644-JB",
       "type": "job",
       "source": "USAJobs",
-      "title": "Program Director, Collection Services & Data Services Program Management Offices",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-05-28",
-      "deadline": "2026-06-21",
-      "description": "Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Executive Competencies, Technical Competencies, Technical Qualifications, and Education Requirements",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/870988700",
-      "salary": "$151661\u2013$209600",
-      "location": "Springfield, Virginia",
+      "title": "PROGRAM ANALYST",
+      "org": "Department of the Air Force - Agency Wide",
+      "posted": "2026-06-22",
+      "deadline": "2026-06-26",
+      "description": "This is a GG-12 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-12 duties for the \"Professional\" work category are at the \"Full Performance\" work level and are equivalent to those at the GS-12 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
+      "score": 0,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/873650500",
+      "salary": "$93445\u2013$121482",
+      "location": "Hickam AFB, Hawaii",
       "remote": false,
       "job_type": "Federal"
     }
