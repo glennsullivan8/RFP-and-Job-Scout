@@ -534,5 +534,13 @@
     "type": "job",
     "first_seen": "2026-06-22T15:49:35.350515",
     "updated": "2026-06-22T15:49:35.350518"
+  },
+  "usa-ST-12993108-26-KEK": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-06-25T13:13:44.816158",
+    "updated": "2026-06-25T13:13:44.816167"
   }
 }
