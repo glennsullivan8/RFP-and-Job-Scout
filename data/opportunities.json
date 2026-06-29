@@ -1,7 +1,7 @@
 {
-  "generated": "2026-06-26T13:09:02.602173",
+  "generated": "2026-06-29T14:49:21.165819",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 36,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -883,23 +883,6 @@
       "url": "https://www.usajobs.gov:443/job/873700200",
       "salary": "$108019\u2013$140426",
       "location": "Naval Base, Norfolk, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-8X-DCIPS-12990448-362644-JB",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "PROGRAM ANALYST",
-      "org": "Department of the Air Force - Agency Wide",
-      "posted": "2026-06-22",
-      "deadline": "2026-06-26",
-      "description": "This is a GG-12 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-12 duties for the \"Professional\" work category are at the \"Full Performance\" work level and are equivalent to those at the GS-12 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/873650500",
-      "salary": "$93445\u2013$121482",
-      "location": "Hickam AFB, Hawaii",
       "remote": false,
       "job_type": "Federal"
     }
