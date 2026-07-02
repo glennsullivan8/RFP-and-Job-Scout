@@ -542,5 +542,13 @@
     "type": "job",
     "first_seen": "2026-06-25T13:13:44.816158",
     "updated": "2026-06-25T13:13:44.816167"
+  },
+  "usa-20260231": {
+    "status": "seen",
+    "title": "Senior GEOINT Authority for Aeronautical Navigation",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-02T12:55:22.552948",
+    "updated": "2026-07-02T12:55:22.552958"
   }
 }

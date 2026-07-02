@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-01T13:32:46.750104",
+  "generated": "2026-07-02T12:55:22.553691",
   "rfp_count": 4,
-  "job_count": 36,
+  "job_count": 35,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -737,26 +737,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-ST-12993108-26-KEK",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Naval Intelligence Activity",
-      "posted": "2026-06-25",
-      "deadline": "2026-07-01",
-      "description": "Your resume must also demonstrate at least one year of specialized experience at or equivalent to the GG/GS-12 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following such as: 1. Leveraging Human Intelligence (HUMINT), Signals Intelligence (SIGINT), Measurement and Signature Intelligence (MASINT)",
-      "score": 13,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/874223100",
-      "salary": "$121785\u2013$158322",
-      "location": "National Maritime Intelligence Center, Maryland",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-48b7d54e0c",
       "type": "job",
       "source": "Watch List",
@@ -867,22 +847,22 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-DE-12988165-26-ARB",
+      "id": "usa-20260231",
       "type": "job",
       "source": "USAJobs",
-      "title": "TOMAHAWK CRUISE MISSILE PLANNING ANALYST",
-      "org": "United States Fleet Forces Command",
-      "posted": "2026-06-22",
-      "deadline": "2026-07-01",
-      "description": "GS-13 Your resume must also demonstrate at least one year of specialized experience at or equivalent to the GS-12 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: Experience performing a wide range of concepts, principles, and practices pertaining to Tomahawk Land to Air Missile (TLAM) an",
+      "title": "Senior GEOINT Authority for Aeronautical Navigation",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-01",
+      "deadline": "2026-07-31",
+      "description": "Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Executive Competencies, Technical Competencies, Technical Qualifications, Executive Core Qualificati",
       "score": 9,
       "matched_kws": [
         "geospatial",
         "geoint"
       ],
-      "url": "https://www.usajobs.gov:443/job/873700200",
-      "salary": "$108019\u2013$140426",
-      "location": "Naval Base, Norfolk, Virginia",
+      "url": "https://www.usajobs.gov:443/job/875176700",
+      "salary": "$151661\u2013$209600",
+      "location": "Saint Louis, Missouri",
       "remote": false,
       "job_type": "Federal"
     }
