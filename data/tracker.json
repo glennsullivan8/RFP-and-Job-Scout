@@ -550,5 +550,13 @@
     "type": "job",
     "first_seen": "2026-07-02T12:55:22.552948",
     "updated": "2026-07-02T12:55:22.552958"
+  },
+  "usa-BSEE-EEGG-26-NW-034(DH)": {
+    "status": "seen",
+    "title": "Interdisciplinary  (General Engineer or Physical Scientist)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-06T14:22:34.486931",
+    "updated": "2026-07-06T14:22:34.486936"
   }
 }
