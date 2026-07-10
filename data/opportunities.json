@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-09T13:47:08.801381",
+  "generated": "2026-07-10T13:09:24.689866",
   "rfp_count": 4,
-  "job_count": 36,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -884,6 +884,25 @@
       "url": "https://www.usajobs.gov:443/job/875176700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-SDST-26-13001257-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (Operations)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-07-10",
+      "deadline": "2026-07-23",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/875712800",
+      "salary": "$121785\u2013$158322",
+      "location": "Fort Belvoir, Virginia",
       "remote": false,
       "job_type": "Federal"
     }
