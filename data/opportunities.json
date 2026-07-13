@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-10T13:09:24.689866",
+  "generated": "2026-07-13T13:21:25.746483",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 43,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -99,6 +99,80 @@
   ],
   "jobs": [
     {
+      "id": "usa-20260256",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Cartographer- Maritime GIS Analyst (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience communica",
+      "score": 40,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "gis",
+        "geospatial",
+        "python",
+        "astronomy",
+        "geoint",
+        "nga"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876226800",
+      "salary": "$85447\u2013$158322",
+      "location": "Springfield, Virginia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260215",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Photogrammetrist (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience communica",
+      "score": 32,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "gis",
+        "geospatial",
+        "arcgis",
+        "astronomy",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876215500",
+      "salary": "$51740\u2013$90597",
+      "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260253",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Imagery Analyst (Targeting) (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Demonstrated experie",
+      "score": 22,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial",
+        "computer vision",
+        "imagery analyst"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876226500",
+      "salary": "$76573\u2013$141880",
+      "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-d623a19320",
       "type": "job",
       "source": "Watch List",
@@ -163,6 +237,28 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-20260251",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "GEOINT Hybrid Analyst (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience applying ",
+      "score": 19,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876034200",
+      "salary": "$73939\u2013$138370",
+      "location": "Fort Gordon, Georgia",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "usa-BSEE-EEGG-26-NW-034(DH)",
@@ -758,6 +854,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-20260219",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Source Strategies Analyst (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience advising ",
+      "score": 13,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876215700",
+      "salary": "$85447\u2013$158322",
+      "location": "Springfield, Virginia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-48b7d54e0c",
       "type": "job",
       "source": "Watch List",
@@ -844,6 +961,27 @@
       "remote": true,
       "job_type": "Aerospace",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-20260254",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Human Geographer (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-07-13",
+      "deadline": "2026-07-25",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience with phys",
+      "score": 11,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "python"
+      ],
+      "url": "https://www.usajobs.gov:443/job/876226600",
+      "salary": "$76573\u2013$158322",
+      "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "watch-9cf5b4abcf",

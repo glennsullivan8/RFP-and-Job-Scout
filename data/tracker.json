@@ -566,5 +566,53 @@
     "type": "job",
     "first_seen": "2026-07-10T13:09:24.689167",
     "updated": "2026-07-10T13:09:24.689174"
+  },
+  "usa-20260256": {
+    "status": "seen",
+    "title": "Cartographer- Maritime GIS Analyst (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.738634",
+    "updated": "2026-07-13T13:21:25.738642"
+  },
+  "usa-20260215": {
+    "status": "seen",
+    "title": "Photogrammetrist (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.739336",
+    "updated": "2026-07-13T13:21:25.739340"
+  },
+  "usa-20260253": {
+    "status": "seen",
+    "title": "Imagery Analyst (Targeting) (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.739940",
+    "updated": "2026-07-13T13:21:25.739944"
+  },
+  "usa-20260251": {
+    "status": "seen",
+    "title": "GEOINT Hybrid Analyst (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.740888",
+    "updated": "2026-07-13T13:21:25.740891"
+  },
+  "usa-20260219": {
+    "status": "seen",
+    "title": "Source Strategies Analyst (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.744369",
+    "updated": "2026-07-13T13:21:25.744373"
+  },
+  "usa-20260254": {
+    "status": "seen",
+    "title": "Human Geographer (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-13T13:21:25.745455",
+    "updated": "2026-07-13T13:21:25.745458"
   }
 }
