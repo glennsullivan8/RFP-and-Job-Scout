@@ -614,5 +614,13 @@
     "type": "job",
     "first_seen": "2026-07-13T13:21:25.745455",
     "updated": "2026-07-13T13:21:25.745458"
+  },
+  "usa-SDST-26-13013230-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (Staff Management)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-07-20T13:03:13.486501",
+    "updated": "2026-07-20T13:03:13.486511"
   }
 }
