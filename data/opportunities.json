@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T12:22:12.092500",
+  "generated": "2026-07-22T12:23:11.879253",
   "rfp_count": 4,
   "job_count": 44,
   "rfps": [
@@ -1006,6 +1006,26 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-SDST-26-13014242-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (Operations)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-07-21",
+      "deadline": "2026-07-28",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/877388900",
+      "salary": "$108001\u2013$140403",
+      "location": "Fort Sam Houston, Texas",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "usa-SDST-26-13013230-DCIPS",
       "type": "job",
       "source": "USAJobs",
@@ -1042,25 +1062,6 @@
       "url": "https://www.usajobs.gov:443/job/875176700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-SDST-26-13001257-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-07-10",
-      "deadline": "2026-07-23",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/875712800",
-      "salary": "$121785\u2013$158322",
-      "location": "Fort Belvoir, Virginia",
       "remote": false,
       "job_type": "Federal"
     }
