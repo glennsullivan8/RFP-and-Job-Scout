@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-23T12:22:30.872505",
+  "generated": "2026-07-24T12:16:33.170744",
   "rfp_count": 4,
-  "job_count": 44,
+  "job_count": 43,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -128,10 +128,10 @@
       "id": "usa-20260215",
       "type": "job",
       "source": "USAJobs",
-      "title": "Photogrammetrist (Hiring Event)",
+      "title": "Photogrammetrist (Hiring Event) **EXTENDED**",
       "org": "National Geospatial-Intelligence Agency",
       "posted": "2026-07-13",
-      "deadline": "2026-07-25",
+      "deadline": "2026-08-01",
       "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience communica",
       "score": 32,
       "matched_kws": [
@@ -1022,26 +1022,6 @@
       "url": "https://www.usajobs.gov:443/job/877388900",
       "salary": "$108001\u2013$140403",
       "location": "Fort Sam Houston, Texas",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-SDST-26-13013230-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Staff Management)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-07-17",
-      "deadline": "2026-07-23",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/876994400",
-      "salary": "$169279\u2013$197200",
-      "location": "Fort Meade, Maryland",
       "remote": false,
       "job_type": "Federal"
     },
