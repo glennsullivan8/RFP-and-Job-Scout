@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-27T13:37:10.630191",
+  "generated": "2026-07-28T12:50:55.814236",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -188,27 +188,6 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-BSEE-EEGG-26-NW-034(DH)",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Interdisciplinary  (General Engineer or Physical Scientist)",
-      "org": "Bureau of Safety and Environmental Enforcement",
-      "posted": "2026-07-06",
-      "deadline": "2026-07-27",
-      "description": "Minimum Qualification Requirements: To qualify for this position you must meet the (1) Basic Educational Requirements AND (2) Specialized Experience for the series to which you are applying. (1) Basic Educational Requirements QUALIFICATIONS FOR GS-0801, GENERAL ENGINEER: A. Degree: Engineering. To be acceptable, the program must: (1) lead to a bachelor's degree in a school of engineering with at l",
-      "score": 19,
-      "matched_kws": [
-        "remote sensing",
-        "gis",
-        "nga"
-      ],
-      "url": "https://www.usajobs.gov:443/job/875369500",
-      "salary": "$85447\u2013$192694",
-      "location": "Multiple Locations",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-8392c7c0c0",
