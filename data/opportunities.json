@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-28T12:50:55.814236",
+  "generated": "2026-07-29T12:57:59.390834",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 36,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -870,26 +870,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-SDST-26-13014242-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-07-21",
-      "deadline": "2026-07-28",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/877388900",
-      "salary": "$108001\u2013$140403",
-      "location": "Fort Sam Houston, Texas",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-20260231",
