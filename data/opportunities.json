@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-29T12:57:59.390834",
+  "generated": "2026-07-30T12:26:40.338905",
   "rfp_count": 4,
-  "job_count": 36,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -120,6 +120,28 @@
       "url": "https://www.usajobs.gov:443/job/876215500",
       "salary": "$51740\u2013$90597",
       "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-SDST-26-13021851-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (GMI Analyst)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-07-30",
+      "deadline": "2026-08-04",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 21,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "arcgis",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/878532400",
+      "salary": "$110401\u2013$143523",
+      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     },
