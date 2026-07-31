@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-30T12:26:40.338905",
+  "generated": "2026-07-31T12:53:10.270796",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -910,6 +910,26 @@
       "url": "https://www.usajobs.gov:443/job/875176700",
       "salary": "$151661\u2013$209600",
       "location": "Saint Louis, Missouri",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-SDST-26-13021919-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Supervisory Intelligence Specialist (GMI Analyst)",
+      "org": "Joint Activities",
+      "posted": "2026-07-31",
+      "deadline": "2026-08-04",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/878751200",
+      "salary": "$111147\u2013$144493",
+      "location": "Fort Bragg, North Carolina",
       "remote": false,
       "job_type": "Federal"
     }
