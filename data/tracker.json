@@ -654,5 +654,21 @@
     "type": "job",
     "first_seen": "2026-08-03T13:38:09.727902",
     "updated": "2026-08-03T13:38:09.727909"
+  },
+  "usa-CHAR-26-13024770-DHA": {
+    "status": "seen",
+    "title": "Cartographer",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-05T12:50:47.071139",
+    "updated": "2026-08-05T12:50:47.071144"
+  },
+  "usa-20260271": {
+    "status": "seen",
+    "title": "Data Analyst (AI Assurance Lead)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-05T12:50:47.076378",
+    "updated": "2026-08-05T12:50:47.076382"
   }
 }

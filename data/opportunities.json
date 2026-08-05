@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-04T12:59:05.638791",
+  "generated": "2026-08-05T12:50:47.077076",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -99,24 +99,25 @@
   ],
   "jobs": [
     {
-      "id": "usa-SDST-26-13021851-DCIPS",
+      "id": "usa-CHAR-26-13024770-DHA",
       "type": "job",
       "source": "USAJobs",
-      "title": "Intelligence Specialist (GMI Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-07-30",
-      "deadline": "2026-08-04",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 21,
+      "title": "Cartographer",
+      "org": "US Army Civilian Human Resources Agency",
+      "posted": "2026-08-05",
+      "deadline": "2026-08-14",
+      "description": "Who May Apply: US Citizens In order to qualify, you must meet the education and/or experience requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive cre",
+      "score": 23,
       "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
         "gis",
         "geospatial",
-        "arcgis",
-        "geoint"
+        "astronomy"
       ],
-      "url": "https://www.usajobs.gov:443/job/878532400",
-      "salary": "$110401\u2013$143523",
-      "location": "Wright-Patterson AFB, Ohio",
+      "url": "https://www.usajobs.gov:443/job/878582000",
+      "salary": "$56715\u2013$109122",
+      "location": "Joint Base Lewis-McChord, Washington",
       "remote": false,
       "job_type": "Federal"
     },
@@ -905,6 +906,26 @@
       "url": "https://www.usajobs.gov:443/job/878751200",
       "salary": "$111147\u2013$144493",
       "location": "Fort Bragg, North Carolina",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260271",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Data Analyst (AI Assurance Lead)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-08-04",
+      "deadline": "2026-08-15",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: At least 10 years of",
+      "score": 7,
+      "matched_kws": [
+        "geospatial",
+        "machine learning"
+      ],
+      "url": "https://www.usajobs.gov:443/job/879303100",
+      "salary": "$169279\u2013$197200",
+      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     }
