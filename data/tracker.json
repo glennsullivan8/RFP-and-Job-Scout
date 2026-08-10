@@ -678,5 +678,21 @@
     "type": "job",
     "first_seen": "2026-08-07T11:42:16.628397",
     "updated": "2026-08-07T11:42:16.628405"
+  },
+  "usa-DE-13030861-26-MLV": {
+    "status": "seen",
+    "title": "SUPERVISOR NAVIGATION IMAGERY GEOSPATIAL INTELLIGENCE AND ACQUISITION ANALYST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-10T11:43:49.211330",
+    "updated": "2026-08-10T11:43:49.211339"
+  },
+  "usa-9X-DCIPS-13028407-778487-SG": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-10T11:43:49.212393",
+    "updated": "2026-08-10T11:43:49.212397"
   }
 }
