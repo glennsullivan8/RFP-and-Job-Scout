@@ -694,5 +694,13 @@
     "type": "job",
     "first_seen": "2026-08-10T11:43:49.212393",
     "updated": "2026-08-10T11:43:49.212397"
+  },
+  "usa-SSO-YOSE-26-13027383-DE-FUL": {
+    "status": "seen",
+    "title": "FUL-Interdisciplinary GIS Specialist (Seasonal)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-11T11:41:04.064127",
+    "updated": "2026-08-11T11:41:04.064136"
   }
 }

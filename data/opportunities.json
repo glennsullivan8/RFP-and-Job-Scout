@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-10T11:43:49.213094",
+  "generated": "2026-08-11T11:41:04.069639",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 40,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -118,6 +118,29 @@
       "url": "https://www.usajobs.gov:443/job/878582000",
       "salary": "$56715\u2013$109122",
       "location": "Joint Base Lewis-McChord, Washington",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-SSO-YOSE-26-13027383-DE-FUL",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "FUL-Interdisciplinary GIS Specialist (Seasonal)",
+      "org": "National Park Service",
+      "posted": "2026-08-10",
+      "deadline": "2026-08-24",
+      "description": "All qualifications must be met by the closing date of this announcement-08/24/2026-unless otherwise stated in this vacancy announcement. Credit will be given for all appropriate qualifying experience. To receive credit for experience, your resume MUST clearly indicate the nature of the duties and responsibilities for each position, starting and ending dates of employment (month/year), and the resu",
+      "score": 23,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "gis",
+        "geospatial",
+        "astronomy"
+      ],
+      "url": "https://www.usajobs.gov:443/job/879979000",
+      "salary": "$29.57\u2013$38.45",
+      "location": "Yosemite National Park, California",
       "remote": false,
       "job_type": "Federal"
     },
