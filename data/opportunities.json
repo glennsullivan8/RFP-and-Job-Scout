@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T11:42:06.003242",
+  "generated": "2026-08-13T11:42:40.289257",
   "rfp_count": 4,
   "job_count": 41,
   "rfps": [
@@ -783,6 +783,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-SDST-26-13031090-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (Operations)",
+      "org": "U.S. Army Space and Missile Defense Command/U. S. Army Forces Strategic Command",
+      "posted": "2026-08-13",
+      "deadline": "2026-08-17",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 13,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/880387300",
+      "salary": "$63351\u2013$82362",
+      "location": "Peterson AFB, Colorado",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-48b7d54e0c",
       "type": "job",
       "source": "Watch List",
@@ -928,25 +949,6 @@
       ],
       "url": "https://www.usajobs.gov:443/job/879303100",
       "salary": "$169279\u2013$197200",
-      "location": "Springfield, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-SDST-26-13025852-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Supervisory Intelligence Specialist (GMI Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-08-07",
-      "deadline": "2026-08-12",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/879663700",
-      "salary": "$143913\u2013$187093",
       "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
