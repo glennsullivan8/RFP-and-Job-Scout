@@ -718,5 +718,13 @@
     "type": "job",
     "first_seen": "2026-08-13T11:42:40.287417",
     "updated": "2026-08-13T11:42:40.287425"
+  },
+  "usa-SDST-26-13031575-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (Operations)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-14T11:41:28.680325",
+    "updated": "2026-08-14T11:41:28.680331"
   }
 }
