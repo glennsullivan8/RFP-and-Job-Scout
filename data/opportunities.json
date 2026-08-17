@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-14T11:41:28.681767",
+  "generated": "2026-08-17T11:21:43.984717",
   "rfp_count": 4,
-  "job_count": 41,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,29 +98,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "usa-CHAR-26-13024770-DHA",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Cartographer",
-      "org": "US Army Civilian Human Resources Agency",
-      "posted": "2026-08-05",
-      "deadline": "2026-08-14",
-      "description": "Who May Apply: US Citizens In order to qualify, you must meet the education and/or experience requirements described below. Experience refers to paid and unpaid experience, including volunteer work done through National Service programs (e.g., Peace Corps, AmeriCorps) and other organizations (e.g., professional; philanthropic; religious; spiritual; community; student; social). You will receive cre",
-      "score": 23,
-      "matched_kws": [
-        "remote sensing",
-        "photogrammetry",
-        "gis",
-        "geospatial",
-        "astronomy"
-      ],
-      "url": "https://www.usajobs.gov:443/job/878582000",
-      "salary": "$56715\u2013$109122",
-      "location": "Joint Base Lewis-McChord, Washington",
-      "remote": false,
-      "job_type": "Federal"
-    },
     {
       "id": "usa-SSO-YOSE-26-13027383-DE-FUL",
       "type": "job",
@@ -929,26 +906,6 @@
       "url": "https://www.usajobs.gov:443/job/879701600",
       "salary": "$127646\u2013$165945",
       "location": "Naval Base, Norfolk, Virginia",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-20260271",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Data Analyst (AI Assurance Lead)",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-08-04",
-      "deadline": "2026-08-15",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: At least 10 years of",
-      "score": 7,
-      "matched_kws": [
-        "geospatial",
-        "machine learning"
-      ],
-      "url": "https://www.usajobs.gov:443/job/879303100",
-      "salary": "$169279\u2013$197200",
-      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     },
