@@ -726,5 +726,13 @@
     "type": "job",
     "first_seen": "2026-08-14T11:41:28.680325",
     "updated": "2026-08-14T11:41:28.680331"
+  },
+  "usa-AFMC-13039444-984174-9X-AMP": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-18T11:21:38.431032",
+    "updated": "2026-08-18T11:21:38.431037"
   }
 }
