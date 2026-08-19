@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-18T11:21:38.436534",
+  "generated": "2026-08-19T11:22:08.588231",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -891,26 +891,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-SDST-26-13031575-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "U.S. Army Space and Missile Defense Command/U. S. Army Forces Strategic Command",
-      "posted": "2026-08-14",
-      "deadline": "2026-08-18",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/880589500",
-      "salary": "$109246\u2013$142022",
-      "location": "Peterson AFB, Colorado",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "usa-DE-13030861-26-MLV",
       "type": "job",
       "source": "USAJobs",
@@ -934,7 +914,7 @@
       "id": "usa-20260276",
       "type": "job",
       "source": "USAJobs",
-      "title": "Deputy Director, Maritime Safety Office",
+      "title": "Deputy Director, Maritime Safety Office **AMENDED**",
       "org": "National Geospatial-Intelligence Agency",
       "posted": "2026-08-10",
       "deadline": "2026-09-10",
@@ -943,7 +923,7 @@
       "matched_kws": [],
       "url": "https://www.usajobs.gov:443/job/880222000",
       "salary": "$151661\u2013$209600",
-      "location": "Multiple Locations",
+      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     }
