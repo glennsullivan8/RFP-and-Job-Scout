@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-19T11:22:08.588231",
+  "generated": "2026-08-20T11:22:50.050219",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -889,26 +889,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-DE-13030861-26-MLV",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "SUPERVISOR NAVIGATION IMAGERY GEOSPATIAL INTELLIGENCE AND ACQUISITION ANALYST",
-      "org": "United States Fleet Forces Command",
-      "posted": "2026-08-10",
-      "deadline": "2026-08-19",
-      "description": "To qualify for the GS-14, your resume must also demonstrate at least one year of specialized experience at or equivalent to the GS-13 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: Experience demonstrating expert knowledge of TLAM and HSW weapon system mission planning, distribution, an",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/879701600",
-      "salary": "$127646\u2013$165945",
-      "location": "Naval Base, Norfolk, Virginia",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-20260276",
