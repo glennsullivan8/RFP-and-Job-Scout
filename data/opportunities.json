@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-24T11:24:02.272085",
+  "generated": "2026-08-25T11:23:24.625660",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -105,8 +105,8 @@
       "title": "FUL-Interdisciplinary GIS Specialist (Temporary)",
       "org": "National Park Service",
       "posted": "2026-08-10",
-      "deadline": "2026-08-24",
-      "description": "All qualifications must be met by the closing date of this announcement-08/24/2026-unless otherwise stated in this vacancy announcement. Credit will be given for all appropriate qualifying experience. To receive credit for experience, your resume MUST clearly indicate the nature of the duties and responsibilities for each position, starting and ending dates of employment (month/year), and the resu",
+      "deadline": "2026-08-26",
+      "description": "All qualifications must be met by the closing date of this announcement-08/26/2026-unless otherwise stated in this vacancy announcement. Credit will be given for all appropriate qualifying experience. To receive credit for experience, your resume MUST clearly indicate the nature of the duties and responsibilities for each position, starting and ending dates of employment (month/year), and the resu",
       "score": 23,
       "matched_kws": [
         "remote sensing",
@@ -194,7 +194,7 @@
       "title": "INTELLIGENCE SPECIALIST",
       "org": "Air Force Materiel Command",
       "posted": "2026-08-18",
-      "deadline": "2026-08-24",
+      "deadline": "2026-08-31",
       "description": "In order to qualify, you must meet the specialized experience requirements described in the Office of Personnel Management (OPM) Qualification Standards for General Schedule Positions, Intelligence Series 0132, There are no Individual Occupational Requirements for this series. Use the Group Coverage Qualification Standard for Administrative and Management Positions for this series EXPERIENCE REQUI",
       "score": 18,
       "matched_kws": [
@@ -889,6 +889,26 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-STSD-26-13046167-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Supervisory Intelligence Specialist (Staff Officer)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-08-25",
+      "deadline": "2026-09-01",
+      "description": "As part of the assessment process, your resume will be evaluated using a competency-based method. This structured evaluation measures your qualifications, experience and skills against the core competencies required for the position. Final scores will determine whether you are referred to the Hiring Manager for further consideration. Who May Apply: Only applicants who meet one of the employment au",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/881848700",
+      "salary": "$127624\u2013$165917",
+      "location": "Fort Sam Houston, Texas",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "usa-20260276",
