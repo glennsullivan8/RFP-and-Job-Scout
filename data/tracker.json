@@ -742,5 +742,13 @@
     "type": "job",
     "first_seen": "2026-08-25T11:23:24.624676",
     "updated": "2026-08-25T11:23:24.624685"
+  },
+  "usa-SDST-26-13048935-DCIPS": {
+    "status": "seen",
+    "title": "Supervisory Intelligence Specialist (GMI Analyst)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-28T21:18:29.844381",
+    "updated": "2026-08-28T21:18:29.844390"
   }
 }

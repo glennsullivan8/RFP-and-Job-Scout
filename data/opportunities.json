@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-27T20:53:33.450911",
+  "generated": "2026-08-28T21:18:29.845451",
   "rfp_count": 4,
   "job_count": 38,
   "rfps": [
@@ -98,29 +98,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "usa-SSO-YOSE-26-13027383-DE-FUL",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "FUL-Interdisciplinary GIS Specialist (Temporary)",
-      "org": "National Park Service",
-      "posted": "2026-08-10",
-      "deadline": "2026-08-27",
-      "description": "All qualifications must be met by the closing date of this announcement-08/27/2026-unless otherwise stated in this vacancy announcement. Credit will be given for all appropriate qualifying experience. To receive credit for experience, your resume MUST clearly indicate the nature of the duties and responsibilities for each position, starting and ending dates of employment (month/year), and the resu",
-      "score": 23,
-      "matched_kws": [
-        "remote sensing",
-        "photogrammetry",
-        "gis",
-        "geospatial",
-        "astronomy"
-      ],
-      "url": "https://www.usajobs.gov:443/job/879979000",
-      "salary": "$29.57\u2013$38.45",
-      "location": "Yosemite National Park, California",
-      "remote": false,
-      "job_type": "Federal"
-    },
     {
       "id": "watch-d623a19320",
       "type": "job",
@@ -907,6 +884,25 @@
       "url": "https://www.usajobs.gov:443/job/881848700",
       "salary": "$127624\u2013$165917",
       "location": "Fort Sam Houston, Texas",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-SDST-26-13048935-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Supervisory Intelligence Specialist (GMI Analyst)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-08-28",
+      "deadline": "2026-09-03",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 5,
+      "matched_kws": [
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/882471200",
+      "salary": "$140239\u2013$182316",
+      "location": "Buckley AFB, Colorado",
       "remote": false,
       "job_type": "Federal"
     },
