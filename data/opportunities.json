@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-28T21:18:29.845451",
+  "generated": "2026-08-31T17:50:49.345392",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -903,6 +903,23 @@
       "url": "https://www.usajobs.gov:443/job/882471200",
       "salary": "$140239\u2013$182316",
       "location": "Buckley AFB, Colorado",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260285",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Summer 2027 College Internship - Analysis Career Field",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-08-31",
+      "deadline": "2026-09-30",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. At least 18 years",
+      "score": 4,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/882357800",
+      "salary": "$27108\u2013$101097",
+      "location": "Multiple Locations",
       "remote": false,
       "job_type": "Federal"
     },

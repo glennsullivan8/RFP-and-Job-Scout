@@ -750,5 +750,13 @@
     "type": "job",
     "first_seen": "2026-08-28T21:18:29.844381",
     "updated": "2026-08-28T21:18:29.844390"
+  },
+  "usa-20260285": {
+    "status": "seen",
+    "title": "Summer 2027 College Internship - Analysis Career Field",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-08-31T17:50:49.344486",
+    "updated": "2026-08-31T17:50:49.344496"
   }
 }
