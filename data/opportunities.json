@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-31T17:50:49.345392",
+  "generated": "2026-09-01T15:22:09.796000",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -163,27 +163,6 @@
       "remote": true,
       "job_type": "University Research / UAP",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-AFMC-13039444-984174-9X-AMP",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Air Force Materiel Command",
-      "posted": "2026-08-18",
-      "deadline": "2026-08-31",
-      "description": "In order to qualify, you must meet the specialized experience requirements described in the Office of Personnel Management (OPM) Qualification Standards for General Schedule Positions, Intelligence Series 0132, There are no Individual Occupational Requirements for this series. Use the Group Coverage Qualification Standard for Administrative and Management Positions for this series EXPERIENCE REQUI",
-      "score": 18,
-      "matched_kws": [
-        "geospatial",
-        "geoint",
-        "nga"
-      ],
-      "url": "https://www.usajobs.gov:443/job/880678200",
-      "salary": "$120548\u2013$156715",
-      "location": "Hanscom AFB, Massachusetts",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-8392c7c0c0",
