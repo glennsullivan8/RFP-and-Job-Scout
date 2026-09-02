@@ -758,5 +758,13 @@
     "type": "job",
     "first_seen": "2026-08-31T17:50:49.344486",
     "updated": "2026-08-31T17:50:49.344496"
+  },
+  "usa-ST-13049079-26-SRM": {
+    "status": "seen",
+    "title": "PHYSICAL SCIENTIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-02T14:57:14.574740",
+    "updated": "2026-09-02T14:57:14.574752"
   }
 }
