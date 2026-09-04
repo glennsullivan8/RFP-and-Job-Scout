@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-03T14:50:54.892008",
+  "generated": "2026-09-04T14:45:26.051453",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -883,25 +883,6 @@
       "url": "https://www.usajobs.gov:443/job/882450300",
       "salary": "$106437\u2013$138370",
       "location": "Stennis Space Center, Mississippi",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-SDST-26-13048935-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Supervisory Intelligence Specialist (GMI Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-08-28",
-      "deadline": "2026-09-03",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 5,
-      "matched_kws": [
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/882471200",
-      "salary": "$140239\u2013$182316",
-      "location": "Buckley AFB, Colorado",
       "remote": false,
       "job_type": "Federal"
     },
