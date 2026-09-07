@@ -774,5 +774,13 @@
     "type": "job",
     "first_seen": "2026-09-03T14:50:54.890514",
     "updated": "2026-09-03T14:50:54.890523"
+  },
+  "usa-9H-AFPC-13057388-108114-ICB": {
+    "status": "seen",
+    "title": "SUPERVISORY CARTOGRAPHER",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-07T16:15:48.668962",
+    "updated": "2026-09-07T16:15:48.668969"
   }
 }

@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-04T14:45:26.051453",
+  "generated": "2026-09-07T16:15:48.673609",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,6 +98,29 @@
     }
   ],
   "jobs": [
+    {
+      "id": "usa-9H-AFPC-13057388-108114-ICB",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "SUPERVISORY CARTOGRAPHER",
+      "org": "Air Combat Command",
+      "posted": "2026-09-04",
+      "deadline": "2026-09-14",
+      "description": "In order to qualify, you must meet the specialized experience requirements described in the Office of Personnel Management (OPM) Qualification Standards for General Schedule Positions, Professional and Scientific Positions, Cartography Series 1370. BASIC REQUIREMENT: Education: Degree in cartography; or a major that included or was supplemented by at least 30 semester hours in cartography and/or d",
+      "score": 27,
+      "matched_kws": [
+        "remote sensing",
+        "photogrammetry",
+        "gis",
+        "geospatial",
+        "astronomy"
+      ],
+      "url": "https://www.usajobs.gov:443/job/883655400",
+      "salary": "$91427\u2013$118857",
+      "location": "Nellis AFB, Nevada",
+      "remote": false,
+      "job_type": "Federal"
+    },
     {
       "id": "watch-d623a19320",
       "type": "job",
