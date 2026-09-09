@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-08T14:52:20.749597",
+  "generated": "2026-09-09T14:59:58.756657",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -876,7 +876,7 @@
       "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
       "org": "National Air and Space Intelligence Center",
       "posted": "2026-09-02",
-      "deadline": "2026-09-09",
+      "deadline": "2026-09-16",
       "description": "This is a GG-14 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-14 duties for the \"Supervision/Management\" work category are at the \"Senior\" work level and are equivalent to those at the GS-14 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
       "score": 9,
       "matched_kws": [
@@ -886,26 +886,6 @@
       "url": "https://www.usajobs.gov:443/job/883215200",
       "salary": "$130461\u2013$169604",
       "location": "Wright-Patterson AFB, Ohio",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-ST-13049079-26-SRM",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "PHYSICAL SCIENTIST",
-      "org": "United States Fleet Forces Command",
-      "posted": "2026-09-02",
-      "deadline": "2026-09-08",
-      "description": "In addition to the Basic Requirements for this position, your resume must also demonstrate at least one year of specialized experience at or equivalent to the GS-12 grade level or pay band in the Federal service or equivalent experience in the private or public sector. Specialized experience must demonstrate the following: Experience independently leading scientific projects from concept to comple",
-      "score": 8,
-      "matched_kws": [
-        "gis",
-        "geospatial"
-      ],
-      "url": "https://www.usajobs.gov:443/job/882450300",
-      "salary": "$106437\u2013$138370",
-      "location": "Stennis Space Center, Mississippi",
       "remote": false,
       "job_type": "Federal"
     },
