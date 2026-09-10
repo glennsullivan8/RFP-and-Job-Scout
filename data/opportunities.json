@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-09T14:59:58.756657",
+  "generated": "2026-09-10T14:47:21.479575",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -903,23 +903,6 @@
       "url": "https://www.usajobs.gov:443/job/882357800",
       "salary": "$27108\u2013$101097",
       "location": "Multiple Locations",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-20260276",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Deputy Director, Maritime Safety Office **AMENDED**",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-08-10",
-      "deadline": "2026-09-10",
-      "description": "Eligibility for this executive level position will be based upon a clear demonstration that the applicant has experience of the scope and quality sufficient to effectively carry out the assignments of the position. Successful applicants will be distinguished from other applicants by a review of the Executive Competencies, Technical Competencies, Technical Qualifications, Intelligence Community Sen",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/880222000",
-      "salary": "$151661\u2013$209600",
-      "location": "Springfield, Virginia",
       "remote": false,
       "job_type": "Federal"
     }
