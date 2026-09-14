@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-11T14:49:54.537217",
+  "generated": "2026-09-14T16:45:26.255800",
   "rfp_count": 4,
-  "job_count": 37,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -118,6 +118,29 @@
       "url": "https://www.usajobs.gov:443/job/883655400",
       "salary": "$91427\u2013$118857",
       "location": "Nellis AFB, Nevada",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20260301",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "GEOINT Hybrid Analyst",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-09-14",
+      "deadline": "2026-09-26",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Knowledge of nati",
+      "score": 23,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial",
+        "arcgis",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/884474300",
+      "salary": "$77772\u2013$144102",
+      "location": "Huntsville, Alabama",
       "remote": false,
       "job_type": "Federal"
     },
@@ -868,6 +891,26 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-SDST-26-13060029-DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (Operations)",
+      "org": "Joint Activities",
+      "posted": "2026-09-12",
+      "deadline": "2026-09-15",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. Priority Placem",
+      "score": 9,
+      "matched_kws": [
+        "geospatial",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/884076700",
+      "salary": "$113356\u2013$147365",
+      "location": "Key West, Florida",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "usa-9X-DCIPS-13054589-065875-MA",

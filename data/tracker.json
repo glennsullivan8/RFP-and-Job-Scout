@@ -782,5 +782,21 @@
     "type": "job",
     "first_seen": "2026-09-07T16:15:48.668962",
     "updated": "2026-09-07T16:15:48.668969"
+  },
+  "usa-20260301": {
+    "status": "seen",
+    "title": "GEOINT Hybrid Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-14T16:45:26.249023",
+    "updated": "2026-09-14T16:45:26.249031"
+  },
+  "usa-SDST-26-13060029-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (Operations)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-14T16:45:26.254708",
+    "updated": "2026-09-14T16:45:26.254712"
   }
 }
