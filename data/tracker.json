@@ -798,5 +798,13 @@
     "type": "job",
     "first_seen": "2026-09-14T16:45:26.254708",
     "updated": "2026-09-14T16:45:26.254712"
+  },
+  "usa-SDST-26-13061537-DCIPS-R": {
+    "status": "seen",
+    "title": "Intelligence Specialist (General Military Intelligence Analyst)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-15T15:25:53.339400",
+    "updated": "2026-09-15T15:25:53.339408"
   }
 }
