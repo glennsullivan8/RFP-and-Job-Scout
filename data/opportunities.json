@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-15T15:25:53.340633",
+  "generated": "2026-09-16T15:18:56.487625",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -868,26 +868,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-SDST-26-13060029-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (Operations)",
-      "org": "Joint Activities",
-      "posted": "2026-09-12",
-      "deadline": "2026-09-15",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. Priority Placem",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/884076700",
-      "salary": "$113356\u2013$147365",
-      "location": "Key West, Florida",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "usa-SDST-26-13061537-DCIPS-R",
