@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-16T15:18:56.487625",
+  "generated": "2026-09-17T15:25:20.706216",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -886,26 +886,6 @@
       "url": "https://www.usajobs.gov:443/job/884584900",
       "salary": "$111119\u2013$144457",
       "location": "Fort Shafter, Hawaii",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-9X-DCIPS-13054589-065875-MA",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "SUPERVISORY INTELLIGENCE SPECIALIST",
-      "org": "National Air and Space Intelligence Center",
-      "posted": "2026-09-02",
-      "deadline": "2026-09-16",
-      "description": "This is a GG-14 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-14 duties for the \"Supervision/Management\" work category are at the \"Senior\" work level and are equivalent to those at the GS-14 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you mu",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/883215200",
-      "salary": "$130461\u2013$169604",
-      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     },
