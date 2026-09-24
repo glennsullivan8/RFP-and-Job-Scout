@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-23T15:16:38.063674",
+  "generated": "2026-09-24T15:41:58.422664",
   "rfp_count": 4,
   "job_count": 38,
   "rfps": [
@@ -408,6 +408,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-26-12851949",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "NRO OIG Inspector",
+      "org": "Central Intelligence Agency",
+      "posted": "2026-09-01",
+      "deadline": "2027-01-31",
+      "description": "Minimum Qualifications Interested candidates should be committed to improving the efficiency of the Federal government, passionate about the ideals of our American republic, and committed to upholding the rule of law and the US Constitution. Hiring decisions will not be based on race, sex, color, religion, or national origin. The NRO OIG will consider work experience, educational background, and p",
+      "score": 16,
+      "matched_kws": [
+        "geospatial",
+        "space",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/852368000",
+      "salary": "$136658\u2013$180484",
+      "location": "Washington, District of Columbia",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-bf0b563c17",
       "type": "job",
       "source": "Watch List",
@@ -758,26 +779,6 @@
       "remote": true,
       "job_type": "Job Board / GEOINT",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-9L-DCIPS-13069144-245831-IR",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "United States Space Force",
-      "posted": "2026-09-22",
-      "deadline": "2026-10-05",
-      "description": "This is a GG-15 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-15 duties for the \"Professional\" work category are at the \"Expert\" work level and are equivalent to those at the GS-15 level. The selectee's salary will be set within the grade equivalent to a GS/GG grade based on the selectee's qualifications in relation to the job. In order to qualify, you must meet th",
-      "score": 13,
-      "matched_kws": [
-        "geospatial",
-        "nga"
-      ],
-      "url": "https://www.usajobs.gov:443/job/885373500",
-      "salary": "$169279\u2013$197200",
-      "location": "Arlington, Virginia",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-48b7d54e0c",
