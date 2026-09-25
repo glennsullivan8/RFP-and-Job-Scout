@@ -830,5 +830,29 @@
     "type": "job",
     "first_seen": "2026-09-24T15:41:58.418367",
     "updated": "2026-09-24T15:41:58.418374"
+  },
+  "usa-SDST-26-13072137-DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (GMI Analyst)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-25T15:43:00.956878",
+    "updated": "2026-09-25T15:43:00.956885"
+  },
+  "usa-9X-DCIPS-13073117-290122-IR": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-25T15:43:00.961660",
+    "updated": "2026-09-25T15:43:00.961663"
+  },
+  "usa-SDST-26-13073278 - DCIPS": {
+    "status": "seen",
+    "title": "Supervisory Intelligence Specialist (GMI Analyst)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-25T15:43:00.963118",
+    "updated": "2026-09-25T15:43:00.963121"
   }
 }
