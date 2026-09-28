@@ -854,5 +854,13 @@
     "type": "job",
     "first_seen": "2026-09-25T15:43:00.963118",
     "updated": "2026-09-25T15:43:00.963121"
+  },
+  "usa-9X-DCIPS-13073406-219592-JM": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-09-28T18:24:42.947875",
+    "updated": "2026-09-28T18:24:42.947883"
   }
 }

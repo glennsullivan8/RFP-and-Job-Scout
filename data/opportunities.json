@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-25T15:43:00.964380",
+  "generated": "2026-09-28T18:24:42.948755",
   "rfp_count": 4,
-  "job_count": 41,
+  "job_count": 40,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,29 +98,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "usa-20260301",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "GEOINT Hybrid Analyst",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-09-14",
-      "deadline": "2026-09-26",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. Knowledge of nati",
-      "score": 23,
-      "matched_kws": [
-        "remote sensing",
-        "gis",
-        "geospatial",
-        "arcgis",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/884474300",
-      "salary": "$77772\u2013$144102",
-      "location": "Huntsville, Alabama",
-      "remote": false,
-      "job_type": "Federal"
-    },
     {
       "id": "watch-d623a19320",
       "type": "job",
@@ -846,26 +823,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-9X-DCIPS-13073117-290122-IR",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force Headquarters",
-      "posted": "2026-09-25",
-      "deadline": "2026-10-01",
-      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION***********ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They a",
-      "score": 12,
-      "matched_kws": [
-        "space",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/886021300",
-      "salary": "$77460\u2013$100703",
-      "location": "Wright-Patterson AFB, Ohio",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-3c8d3d84bd",
       "type": "job",
       "source": "Watch List",
@@ -985,6 +942,23 @@
       "url": "https://www.usajobs.gov:443/job/882357800",
       "salary": "$27108\u2013$101097",
       "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-9X-DCIPS-13073406-219592-JM",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "National Air and Space Intelligence Center",
+      "posted": "2026-09-28",
+      "deadline": "2026-10-02",
+      "description": "***THIS IS A DEVELOPMENTAL POSITION THAT CAN BE FILLED AT THE GG-07, GG-09, OR THE GG-12 GRADE LEVEL*** This is a GG-07/09 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-07/09 duties for the \"Professional\" work category are at the \"Entry/Developmental\" work level and are equivalent to those at the GS-07/09 level. The selectee's salary will be set within the 07/09 gr",
+      "score": 0,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/886362900",
+      "salary": "$52339\u2013$120696",
+      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     }
