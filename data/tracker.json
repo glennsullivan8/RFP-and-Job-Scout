@@ -862,5 +862,13 @@
     "type": "job",
     "first_seen": "2026-09-28T18:24:42.947875",
     "updated": "2026-09-28T18:24:42.947883"
+  },
+  "usa-SDST - 26- 3079267 - DCIPS": {
+    "status": "seen",
+    "title": "Intelligence Specialist (GMI Analyst)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-01T17:16:18.369597",
+    "updated": "2026-10-01T17:16:18.369605"
   }
 }

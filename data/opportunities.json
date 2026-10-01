@@ -1,7 +1,7 @@
 {
-  "generated": "2026-09-30T16:38:43.230431",
+  "generated": "2026-10-01T17:16:18.376641",
   "rfp_count": 4,
-  "job_count": 40,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,6 +98,28 @@
     }
   ],
   "jobs": [
+    {
+      "id": "usa-SDST - 26- 3079267 - DCIPS",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Intelligence Specialist (GMI Analyst)",
+      "org": "U.S. Army Intelligence and Security Command",
+      "posted": "2026-09-30",
+      "deadline": "2026-10-08",
+      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "score": 21,
+      "matched_kws": [
+        "gis",
+        "geospatial",
+        "arcgis",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/887066400",
+      "salary": "$118675\u2013$154280",
+      "location": "Buckley AFB, Colorado",
+      "remote": false,
+      "job_type": "Federal"
+    },
     {
       "id": "watch-d623a19320",
       "type": "job",
@@ -229,27 +251,6 @@
       "remote": true,
       "job_type": "University Research",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-SDST-26-13072137-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (GMI Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-09-25",
-      "deadline": "2026-10-01",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 17,
-      "matched_kws": [
-        "gis",
-        "arcgis",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/886360200",
-      "salary": "$106437\u2013$138370",
-      "location": "Fort Gordon, Georgia",
-      "remote": false,
-      "job_type": "Federal"
     },
     {
       "id": "watch-1845aead04",
@@ -915,7 +916,7 @@
       "title": "Intelligence Specialist (General Military Intelligence Analyst)",
       "org": "U.S. Army Intelligence and Security Command",
       "posted": "2026-09-15",
-      "deadline": "2026-09-30",
+      "deadline": "2026-10-07",
       "description": "This announcement has been extended to 30 September 2026. Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document re",
       "score": 9,
       "matched_kws": [
@@ -925,23 +926,6 @@
       "url": "https://www.usajobs.gov:443/job/884587800",
       "salary": "$111119\u2013$144457",
       "location": "Fort Shafter, Hawaii",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-20260285",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Summer 2027 College Internship - Analysis Career Field",
-      "org": "National Geospatial-Intelligence Agency",
-      "posted": "2026-08-31",
-      "deadline": "2026-09-30",
-      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: 1. At least 18 years",
-      "score": 4,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/882357800",
-      "salary": "$27108\u2013$101097",
-      "location": "Multiple Locations",
       "remote": false,
       "job_type": "Federal"
     },
