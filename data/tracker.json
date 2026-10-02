@@ -870,5 +870,21 @@
     "type": "job",
     "first_seen": "2026-10-01T17:16:18.369597",
     "updated": "2026-10-01T17:16:18.369605"
+  },
+  "usa-20270003": {
+    "status": "seen",
+    "title": "Imagery Analyst (FMV) (TERM) (Open and Continuous)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-02T16:28:42.549365",
+    "updated": "2026-10-02T16:28:42.549372"
+  },
+  "usa-20270006": {
+    "status": "seen",
+    "title": "Geospatial Analyst",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-02T16:28:42.551827",
+    "updated": "2026-10-02T16:28:42.551830"
   }
 }
