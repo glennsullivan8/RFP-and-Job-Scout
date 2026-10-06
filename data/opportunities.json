@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-02T16:28:42.554035",
+  "generated": "2026-10-06T17:01:49.719063",
   "rfp_count": 4,
-  "job_count": 40,
+  "job_count": 39,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -911,22 +911,22 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-SDST-26-13073278 - DCIPS",
+      "id": "usa-SDST-26-13081504-DCIPS",
       "type": "job",
       "source": "USAJobs",
-      "title": "Supervisory Intelligence Specialist (GMI Analyst)",
+      "title": "Supervisory Intelligence Specialist (Staff Officer)",
       "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-09-25",
-      "deadline": "2026-10-02",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
+      "posted": "2026-10-06",
+      "deadline": "2026-10-13",
+      "description": "As part of the assessment process, your resume will be evaluated using a competency-based method. This structured evaluation measures your qualifications, experience and skills against the core competencies required for the position. Final scores will determine whether you are referred to the Hiring Manager for further consideration. Who May Apply: Only applicants who meet one of the employment au",
       "score": 9,
       "matched_kws": [
         "geospatial",
         "geoint"
       ],
-      "url": "https://www.usajobs.gov:443/job/886357400",
-      "salary": "$118675\u2013$154280",
-      "location": "Buckley AFB, Colorado",
+      "url": "https://www.usajobs.gov:443/job/887287300",
+      "salary": "$127624\u2013$165917",
+      "location": "Fort Sam Houston, Texas",
       "remote": false,
       "job_type": "Federal"
     },
@@ -947,23 +947,6 @@
       "url": "https://www.usajobs.gov:443/job/884587800",
       "salary": "$111119\u2013$144457",
       "location": "Fort Shafter, Hawaii",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-9X-DCIPS-13073406-219592-JM",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "National Air and Space Intelligence Center",
-      "posted": "2026-09-28",
-      "deadline": "2026-10-02",
-      "description": "***THIS IS A DEVELOPMENTAL POSITION THAT CAN BE FILLED AT THE GG-07, GG-09, OR THE GG-12 GRADE LEVEL*** This is a GG-07/09 position in the Defense Civilian Intelligence Personnel System (DCIPS). The GG-07/09 duties for the \"Professional\" work category are at the \"Entry/Developmental\" work level and are equivalent to those at the GS-07/09 level. The selectee's salary will be set within the 07/09 gr",
-      "score": 0,
-      "matched_kws": [],
-      "url": "https://www.usajobs.gov:443/job/886362900",
-      "salary": "$52339\u2013$120696",
-      "location": "Wright-Patterson AFB, Ohio",
       "remote": false,
       "job_type": "Federal"
     }

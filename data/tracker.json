@@ -886,5 +886,13 @@
     "type": "job",
     "first_seen": "2026-10-02T16:28:42.551827",
     "updated": "2026-10-02T16:28:42.551830"
+  },
+  "usa-SDST-26-13081504-DCIPS": {
+    "status": "seen",
+    "title": "Supervisory Intelligence Specialist (Staff Officer)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-06T17:01:49.717973",
+    "updated": "2026-10-06T17:01:49.717982"
   }
 }
