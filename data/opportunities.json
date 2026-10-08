@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-07T17:39:29.870287",
+  "generated": "2026-10-08T17:42:02.142053",
   "rfp_count": 4,
-  "job_count": 39,
+  "job_count": 38,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -927,26 +927,6 @@
       "url": "https://www.usajobs.gov:443/job/887287300",
       "salary": "$127624\u2013$165917",
       "location": "Fort Sam Houston, Texas",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
-      "id": "usa-SDST-26-13061647-DCIPS-R",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (General Military Intelligence Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-09-15",
-      "deadline": "2026-10-07",
-      "description": "This announcement has been extended to 30 September 2026. Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document re",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/884587800",
-      "salary": "$111119\u2013$144457",
-      "location": "Fort Shafter, Hawaii",
       "remote": false,
       "job_type": "Federal"
     }
