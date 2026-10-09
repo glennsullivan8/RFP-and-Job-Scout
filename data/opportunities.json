@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-08T17:42:02.142053",
+  "generated": "2026-10-09T17:17:19.314282",
   "rfp_count": 4,
   "job_count": 38,
   "rfps": [
@@ -98,28 +98,6 @@
     }
   ],
   "jobs": [
-    {
-      "id": "usa-SDST - 26- 3079267 - DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Intelligence Specialist (GMI Analyst)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-09-30",
-      "deadline": "2026-10-08",
-      "description": "Who May Apply: Only applicants who meet one of the employment authority categories below are eligible to apply for this job. You will be asked to identify which category or categories you meet, and to provide documents which prove you meet the category or categories you selected. See Proof of Eligibility for an extensive list of document requirements for all employment authorities. 10-Point Other ",
-      "score": 21,
-      "matched_kws": [
-        "gis",
-        "geospatial",
-        "arcgis",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/887066400",
-      "salary": "$118675\u2013$154280",
-      "location": "Buckley AFB, Colorado",
-      "remote": false,
-      "job_type": "Federal"
-    },
     {
       "id": "watch-d623a19320",
       "type": "job",
@@ -843,6 +821,26 @@
       "remote": true,
       "job_type": "Defense / Aerospace",
       "is_watchlist": true
+    },
+    {
+      "id": "usa-9X-DCIPS-13086626-387226-JB",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Department of the Air Force Headquarters",
+      "posted": "2026-10-09",
+      "deadline": "2026-10-16",
+      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
+      "score": 12,
+      "matched_kws": [
+        "space",
+        "geoint"
+      ],
+      "url": "https://www.usajobs.gov:443/job/888116000",
+      "salary": "$77460\u2013$100703",
+      "location": "Wright-Patterson AFB, Ohio",
+      "remote": false,
+      "job_type": "Federal"
     },
     {
       "id": "watch-3c8d3d84bd",
