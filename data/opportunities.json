@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-13T17:55:01.868817",
+  "generated": "2026-10-14T15:41:03.098812",
   "rfp_count": 4,
-  "job_count": 38,
+  "job_count": 37,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -907,26 +907,6 @@
       "remote": true,
       "job_type": "Commercial Space",
       "is_watchlist": true
-    },
-    {
-      "id": "usa-SDST-26-13081504-DCIPS",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "Supervisory Intelligence Specialist (Staff Officer)",
-      "org": "U.S. Army Intelligence and Security Command",
-      "posted": "2026-10-06",
-      "deadline": "2026-10-13",
-      "description": "As part of the assessment process, your resume will be evaluated using a competency-based method. This structured evaluation measures your qualifications, experience and skills against the core competencies required for the position. Final scores will determine whether you are referred to the Hiring Manager for further consideration. Who May Apply: Only applicants who meet one of the employment au",
-      "score": 9,
-      "matched_kws": [
-        "geospatial",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/887287300",
-      "salary": "$127624\u2013$165917",
-      "location": "Fort Sam Houston, Texas",
-      "remote": false,
-      "job_type": "Federal"
     }
   ]
 }
