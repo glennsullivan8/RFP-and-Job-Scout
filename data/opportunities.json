@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T15:29:36.577897",
+  "generated": "2026-10-16T15:10:49.811314",
   "rfp_count": 4,
   "job_count": 37,
   "rfps": [
@@ -542,7 +542,7 @@
       "id": "usa-20270003",
       "type": "job",
       "source": "USAJobs",
-      "title": "Imagery Analyst (FMV) (TERM) (Open and Continuous)",
+      "title": "Imagery Analyst (FMV) (TERM) (Open Continuous)",
       "org": "National Geospatial-Intelligence Agency",
       "posted": "2026-10-01",
       "deadline": "2027-09-30",
