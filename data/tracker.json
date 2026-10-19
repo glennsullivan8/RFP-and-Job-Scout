@@ -902,5 +902,53 @@
     "type": "job",
     "first_seen": "2026-10-09T17:17:19.312607",
     "updated": "2026-10-09T17:17:19.312619"
+  },
+  "usa-20270042": {
+    "status": "seen",
+    "title": "Visual Information Specialist (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.622400",
+    "updated": "2026-10-19T17:18:57.622407"
+  },
+  "usa-20270046": {
+    "status": "seen",
+    "title": "Cartographer Maritime GIS Analyst (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.623238",
+    "updated": "2026-10-19T17:18:57.623241"
+  },
+  "usa-20270035": {
+    "status": "seen",
+    "title": "Analytic Methodologist (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.624099",
+    "updated": "2026-10-19T17:18:57.624102"
+  },
+  "usa-20270017": {
+    "status": "seen",
+    "title": "GEOINT Hybrid Analyst (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.625343",
+    "updated": "2026-10-19T17:18:57.625346"
+  },
+  "usa-20270011": {
+    "status": "seen",
+    "title": "Geodetic Orbit Scientist",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.629825",
+    "updated": "2026-10-19T17:18:57.629829"
+  },
+  "usa-20270040": {
+    "status": "seen",
+    "title": "Database Manager (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-19T17:18:57.631443",
+    "updated": "2026-10-19T17:18:57.631446"
   }
 }
