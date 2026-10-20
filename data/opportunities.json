@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-19T17:18:57.632504",
+  "generated": "2026-10-20T15:32:39.275538",
   "rfp_count": 4,
-  "job_count": 41,
+  "job_count": 43,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -98,6 +98,29 @@
     }
   ],
   "jobs": [
+    {
+      "id": "usa-27-BPA-54019-13094172-MP",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "IT Specialist (GIS Lead)",
+      "org": "Bonneville Power Administration",
+      "posted": "2026-10-20",
+      "deadline": "2026-10-29",
+      "description": "BASIC REQUIREMENT: Experience must be IT related; the experience may be demonstrated by paid or unpaid experience and/or completion of specific, intensive training (for example, IT certification), as appropriate. For all positions individuals must have IT-related experience demonstrating each of the four competencies listed below. The employing agency is responsible for identifying the specific le",
+      "score": 25,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial",
+        "arcgis",
+        "python"
+      ],
+      "url": "https://www.usajobs.gov:443/job/889423200",
+      "salary": "$114684\u2013$149091",
+      "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
     {
       "id": "usa-20270042",
       "type": "job",
@@ -250,6 +273,27 @@
         "geoint"
       ],
       "url": "https://www.usajobs.gov:443/job/889028100",
+      "salary": "$76573\u2013$158322",
+      "location": "Multiple Locations",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-20270032",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Training and Education Officer (Hiring Event)",
+      "org": "National Geospatial-Intelligence Agency",
+      "posted": "2026-10-19",
+      "deadline": "2026-10-31",
+      "description": "MANDATORY QUALIFICATION CRITERIA: For this particular job, applicants must meet all competencies reflected under the Mandatory Qualification Criteria to include education (if required). Online resumes must demonstrate qualification by providing specific examples and associated results, in response to the announcement's mandatory criteria specified in this vacancy announcement: Experience applying ",
+      "score": 18,
+      "matched_kws": [
+        "geospatial",
+        "geoint",
+        "nga"
+      ],
+      "url": "https://www.usajobs.gov:443/job/889388400",
       "salary": "$76573\u2013$158322",
       "location": "Multiple Locations",
       "remote": false,

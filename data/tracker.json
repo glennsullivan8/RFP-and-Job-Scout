@@ -950,5 +950,21 @@
     "type": "job",
     "first_seen": "2026-10-19T17:18:57.631443",
     "updated": "2026-10-19T17:18:57.631446"
+  },
+  "usa-27-BPA-54019-13094172-MP": {
+    "status": "seen",
+    "title": "IT Specialist (GIS Lead)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-20T15:32:39.267819",
+    "updated": "2026-10-20T15:32:39.267828"
+  },
+  "usa-20270032": {
+    "status": "seen",
+    "title": "Training and Education Officer (Hiring Event)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-20T15:32:39.269777",
+    "updated": "2026-10-20T15:32:39.269782"
   }
 }
