@@ -966,5 +966,21 @@
     "type": "job",
     "first_seen": "2026-10-20T15:32:39.269777",
     "updated": "2026-10-20T15:32:39.269782"
+  },
+  "usa-5R-DCIPS-13099655-240734-JB": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-26T17:06:59.265086",
+    "updated": "2026-10-26T17:06:59.265095"
+  },
+  "usa-FEMA-CTG-13099005-MP": {
+    "status": "seen",
+    "title": "Supervisory Emergency Management Specialist (Geospatial)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-26T17:06:59.266514",
+    "updated": "2026-10-26T17:06:59.266519"
   }
 }
