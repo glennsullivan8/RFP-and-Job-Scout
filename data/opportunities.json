@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-26T17:06:59.267638",
+  "generated": "2026-10-27T16:10:33.011250",
   "rfp_count": 4,
-  "job_count": 45,
+  "job_count": 46,
   "rfps": [
     {
       "id": "vt-rfp-finesst",
@@ -805,6 +805,27 @@
       "is_watchlist": true
     },
     {
+      "id": "usa-FEMA-KR-13101812-DE",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "Emergency Management Specialist (Geospatial)",
+      "org": "Federal Emergency Management Agency",
+      "posted": "2026-10-27",
+      "deadline": "2026-11-03",
+      "description": "The qualification requirements listed below must be met by the closing date of this announcement. To qualify for this position at the GS-13 level, you must possess one full year of specialized experience equivalent to at least the GS-12 level in the Federal government, which has equipped you with the skills needed to successfully perform the duties of the position. Experience may be obtained in th",
+      "score": 14,
+      "matched_kws": [
+        "remote sensing",
+        "gis",
+        "geospatial"
+      ],
+      "url": "https://www.usajobs.gov:443/job/890312100",
+      "salary": "$118675\u2013$154280",
+      "location": "Lakewood, Colorado",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
       "id": "watch-b7e9e4de40",
       "type": "job",
       "source": "Watch List",
@@ -958,26 +979,6 @@
       "is_watchlist": true
     },
     {
-      "id": "usa-5R-DCIPS-13099655-240734-JB",
-      "type": "job",
-      "source": "USAJobs",
-      "title": "INTELLIGENCE SPECIALIST",
-      "org": "Department of the Air Force Headquarters",
-      "posted": "2026-10-26",
-      "deadline": "2026-10-30",
-      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
-      "score": 12,
-      "matched_kws": [
-        "space",
-        "geoint"
-      ],
-      "url": "https://www.usajobs.gov:443/job/890199000",
-      "salary": "$75233\u2013$97809",
-      "location": "Patrick AFB, Florida",
-      "remote": false,
-      "job_type": "Federal"
-    },
-    {
       "id": "watch-3c8d3d84bd",
       "type": "job",
       "source": "Watch List",
@@ -1060,6 +1061,23 @@
       "url": "https://www.usajobs.gov:443/job/890202100",
       "salary": "$133060\u2013$172980",
       "location": "Oakland, California",
+      "remote": false,
+      "job_type": "Federal"
+    },
+    {
+      "id": "usa-5D-DCIPS-13099466-513392-JB",
+      "type": "job",
+      "source": "USAJobs",
+      "title": "INTELLIGENCE SPECIALIST",
+      "org": "Department of the Air Force Headquarters",
+      "posted": "2026-10-27",
+      "deadline": "2026-11-02",
+      "description": "*********THIS IS AN AIR RESERVE TECHNICIAN (ART) POSITION*********** ARTs are part of the regular career civil service and enjoy all the benefits granted to Federal employees in the competitive civil service. In addition, ARTs are required to maintain their active membership in the Air Force (AF0 Reserve unit where assigned. ARTs receive on average one weekend of military training per month. They ",
+      "score": 4,
+      "matched_kws": [],
+      "url": "https://www.usajobs.gov:443/job/890311200",
+      "salary": "$79533\u2013$103399",
+      "location": "Homestead AFB, Florida",
       "remote": false,
       "job_type": "Federal"
     },

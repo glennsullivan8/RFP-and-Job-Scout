@@ -982,5 +982,21 @@
     "type": "job",
     "first_seen": "2026-10-26T17:06:59.266514",
     "updated": "2026-10-26T17:06:59.266519"
+  },
+  "usa-FEMA-KR-13101812-DE": {
+    "status": "seen",
+    "title": "Emergency Management Specialist (Geospatial)",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-27T16:10:33.007284",
+    "updated": "2026-10-27T16:10:33.007293"
+  },
+  "usa-5D-DCIPS-13099466-513392-JB": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-27T16:10:33.010101",
+    "updated": "2026-10-27T16:10:33.010105"
   }
 }
