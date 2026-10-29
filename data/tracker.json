@@ -1006,5 +1006,21 @@
     "type": "job",
     "first_seen": "2026-10-28T16:58:18.260704",
     "updated": "2026-10-28T16:58:18.260713"
+  },
+  "usa-DEST-13104596-27-ELP": {
+    "status": "seen",
+    "title": "INTELLIGENCE SPECIALIST",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-29T17:17:24.470156",
+    "updated": "2026-10-29T17:17:24.470163"
+  },
+  "usa-20270066": {
+    "status": "seen",
+    "title": "DD, Maritime Safety Office",
+    "source": "USAJobs",
+    "type": "job",
+    "first_seen": "2026-10-29T17:17:24.472593",
+    "updated": "2026-10-29T17:17:24.472596"
   }
 }
